@@ -34,4 +34,5 @@ Para la elaboracíon del ejerccio he elegido dos servidores de la pagina 1&1 el 
 **Ejercicio 4.** Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada.
 
 **Ejercicio 5.** Instala el sistema de gestión de fuentes git.
+
 Para instalar git es necesario ejecutar en la terminal el siguiente comando: sudo apt-get install git
