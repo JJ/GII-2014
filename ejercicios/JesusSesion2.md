@@ -69,3 +69,5 @@ Mi nucleo si contiene dicho modulo del kernel.
 [Captura de pantalla ejercicio](https://www.dropbox.com/s/7ghximpcmblc877/ejercicio10.png?dl=0 "Captura").
 
 **Ejecicio 11.** Comentar diferentes soluciones de Software as a Service de uso habitual.
+
+Comentado.
