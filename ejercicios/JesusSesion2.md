@@ -43,10 +43,10 @@ Para instalar git es necesario ejecutar en la terminal el siguiente comando: sud
 **Ejercicio 6.** 
 
   **1.** Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
-    En mi caso he creado el archivo Ejercicio6_P con su README.md
+  En mi caso he creado el archivo Ejercicio6_P con su README.md
+  
+  Para clonar el directorio ejecutamos en la terminal el comando git clone https://github.com/Jesux11/Ejercicio6_P  
+  
+  Para modificar el archivo ejecutamos el siguiente comando: git commit -m "Modificando el archivo README"
     
-    Para clonar el directorio ejecutamos en la terminal el comando git clone https://github.com/Jesux11/Ejercicio6_P
-    
-    Para modificar el archivo ejecutamos el siguiente comando: git commit -m "Modificando el archivo README"
-    
-    Para guardar los cambios hacemos lo siguiente: git push
+  Para guardar los cambios hacemos lo siguiente: git push
