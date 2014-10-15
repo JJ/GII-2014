@@ -52,3 +52,11 @@ Para instalar git es necesario ejecutar en la terminal el siguiente comando: sud
   Para guardar los cambios hacemos lo siguiente: git push
   
   [Captura de pantalla ejercicio](https://www.dropbox.com/s/3ascml9ouhgvul7/Ejercicio6.png?dl=0 "Captura").
+
+**Ejercicio 9.**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? 
+
+¿Qué aparece como salida de esa orden?
+
+Mi procesador es un AMD Turion(tm) II Ultra Dual-Core Mobile M600, Con Con caché 1MB caché. Al ejecutar el comando  cat /cpu/info puedo observar el modelo de mi procesador.
+
+CUando ejecuto este comando egrep '^flags.*(vmx|svm)' /proc/cpuinfo  no me muestra ningún tipo de información.
