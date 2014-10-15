@@ -38,3 +38,8 @@ Tutorial de docker realizado: [Imagen Docker](https://www.dropbox.com/s/o96730ri
 **Ejercicio 5.** Instala el sistema de gestión de fuentes git.
 
 Para instalar git es necesario ejecutar en la terminal el siguiente comando: sudo apt-get install git
+
+
+**Ejercicio 6.** 
+
+  **1.** Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
