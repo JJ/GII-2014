@@ -53,7 +53,7 @@ Para instalar git es necesario ejecutar en la terminal el siguiente comando: sud
   
   [Captura de pantalla ejercicio](https://www.dropbox.com/s/3ascml9ouhgvul7/Ejercicio6.png?dl=0 "Captura").
 
-**Ejercicio 9.**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? 
+**Ejercicio 9.** Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? 
 
 ¿Qué aparece como salida de esa orden?
 
