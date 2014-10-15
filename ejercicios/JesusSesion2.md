@@ -29,7 +29,7 @@ Para la elaboracíon del ejerccio he elegido dos servidores de la pagina 1&1 el 
 
   **1.** ¿Qué tipo de virtualización utilizarias en cada caso?
 
-  **2.** ¿Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.?
+  Comentado en el foro.
 
 **Ejercicio 4.** Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada.
 
