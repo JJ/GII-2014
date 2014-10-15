@@ -51,4 +51,4 @@ Para instalar git es necesario ejecutar en la terminal el siguiente comando: sud
     
   Para guardar los cambios hacemos lo siguiente: git push
   
-  [Captura de pantalla ejercicio](http://www.pccomponentes.com/fujitsu_primergy_rx300_s8_formato_rack.html "Captura").
+  [Captura de pantalla ejercicio](https://www.dropbox.com/s/3ascml9ouhgvul7/Ejercicio6.png?dl=0 "Captura").
