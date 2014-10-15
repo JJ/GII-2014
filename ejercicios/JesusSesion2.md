@@ -29,9 +29,45 @@ Para la elaboracíon del ejerccio he elegido dos servidores de la pagina 1&1 el 
 
   **1.** ¿Qué tipo de virtualización utilizarias en cada caso?
 
-  **2.** ¿Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.?
+  Comentado en el foro.
 
 **Ejercicio 4.** Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada.
 
+Tutorial de docker realizado: [Imagen Docker](https://www.dropbox.com/s/o96730riyqisphq/docker.png?dl=0 "Imagen turorial realizado").
+
 **Ejercicio 5.** Instala el sistema de gestión de fuentes git.
+
 Para instalar git es necesario ejecutar en la terminal el siguiente comando: sudo apt-get install git
+
+
+**Ejercicio 6.** 
+
+  **1.** Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+  En mi caso he creado el archivo Ejercicio6_P con su README.md
+  
+  Para clonar el directorio ejecutamos en la terminal el comando git clone https://github.com/Jesux11/Ejercicio6_P  
+  
+  Para modificar el archivo ejecutamos el siguiente comando: git commit -m "Modificando el archivo README"
+    
+  Para guardar los cambios hacemos lo siguiente: git push
+  
+  [Captura de pantalla ejercicio](https://www.dropbox.com/s/3ascml9ouhgvul7/Ejercicio6.png?dl=0 "Captura").
+
+**Ejercicio 9.** Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? 
+
+¿Qué aparece como salida de esa orden?
+
+Mi procesador es un AMD Turion(tm) II Ultra Dual-Core Mobile M600, Con Con caché 1MB caché. Al ejecutar el comando  cat /proc/cpuinfo puedo observar el modelo de mi procesador.
+
+Cuando ejecuto este comando egrep '^flags.*(vmx|svm)' /proc/cpuinfo  no me muestra ningún tipo de información.
+
+
+**Ejercicio 10.** Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+Mi nucleo si contiene dicho modulo del kernel.
+
+[Captura de pantalla ejercicio](https://www.dropbox.com/s/7ghximpcmblc877/ejercicio10.png?dl=0 "Captura").
+
+**Ejecicio 11.** Comentar diferentes soluciones de Software as a Service de uso habitual.
+
+Comentado.
