@@ -60,3 +60,10 @@ Para instalar git es necesario ejecutar en la terminal el siguiente comando: sud
 Mi procesador es un AMD Turion(tm) II Ultra Dual-Core Mobile M600, Con Con caché 1MB caché. Al ejecutar el comando  cat /cpu/info puedo observar el modelo de mi procesador.
 
 CUando ejecuto este comando egrep '^flags.*(vmx|svm)' /proc/cpuinfo  no me muestra ningún tipo de información.
+
+
+**Ejercicio 10.** Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+Mi nucleo si contiene dicho modulo del kernel.
+
+[Captura de pantalla ejercicio](https://www.dropbox.com/s/7ghximpcmblc877/ejercicio10.png?dl=0 "Captura").
