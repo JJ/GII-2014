@@ -104,6 +104,14 @@ Instala el sistema de gestión de fuentes git.
 1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. <br />
 2. Modificar el readme y subir el fichero modificado. <br />
 
+Para este ejercicio se ha utilizado un proyecto creado para la realización de la práctica. Los pasos que se han seguido se ilustran a continuación:
+
+![6](http://s3.postimg.org/mfouvrrbn/Captur_Files.png) .
+
+Al modificar ejecutaremos git commit -m "modificado", y finalmente lo subimos:
+
+![7](http://s15.postimg.org/aldx08wiz/Captur_Files_1.png) .
+
 
 ###Ejercicio 7
 1. Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. <br />
