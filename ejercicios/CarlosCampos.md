@@ -39,12 +39,12 @@ En el caso de Google Compute Engine, utilizaremos **n1-standard-4**, el cuál es
 	Precio -> 0,252 $/h
 
 **Calcular coste anual usando el 1%**
-Amazon EC2: 0,280 $/h * 87,6 h = 24,528 $ -> 19,22468 €
-GCE (Google Compute Engine): 0,252 $/h * 87,6 h = 22,0752 $ -> 173,02210 €
+Amazon EC2: 0,280 $/h * 87,6 h = 24,528 $ -> 19,2247 €
+GCE (Google Compute Engine): 0,252 $/h * 87,6 h = 22,0752 $ -> 17,3022 €
 
 **Calcular coste anual usando el 10%**
-Amazon EC2: 0.280 $/h * 876 h = 245,28 $ -> 19,22468 €
-GCE: 0.252 $/h * 876 h = 220,752 $ -> 173,02211 €
+Amazon EC2: 0.280 $/h * 876 h = 245,28 $ -> 192,247 €
+GCE: 0.252 $/h * 876 h = 220,752 $ -> 173,022 €
 
 
 
