@@ -52,10 +52,10 @@
 
 ##Clase 20 de Octubre
 
-* [X]Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo. <br /> <br />
+* [X] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo. <br /> <br />
 Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores. <br />
-* [X]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS  <br />
-* [X]Otros objetivos  <br />
+* [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS  <br />
+* [X] Otros objetivos  <br />
 
-* [X]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.  <br />
-* [X]Comprender el método de entrega de las prácticas de la asignatura.  <br />
+* [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.  <br />
+* [X] Comprender el método de entrega de las prácticas de la asignatura.  <br />
