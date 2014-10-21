@@ -58,3 +58,6 @@ Aprovechando un [programa](https://github.com/ccamposfuentes/DAI/blob/master/p1/
 		`./cde_2011-08-15_64bits ./e1.py  `
 - Podemos ver que se ejecuta el programa perfectamente en la siguiente imágen.  
 		`[CDE en funcionamiento](https://www.dropbox.com/s/9ewxd7635dwk2cz/cde-ejecutado.png?dl=0) `
+
+###Ejercicio 4  
+Tutorial de docker realizado, comprobar en la siguiente [imágen](https://www.dropbox.com/s/f88cbc9xk1j1o1p/tutorial_docker.png?dl=0)
