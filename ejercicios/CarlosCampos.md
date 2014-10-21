@@ -60,4 +60,10 @@ Aprovechando un [programa](https://github.com/ccamposfuentes/DAI/blob/master/p1/
 		`[CDE en funcionamiento](https://www.dropbox.com/s/9ewxd7635dwk2cz/cde-ejecutado.png?dl=0) `
 
 ###Ejercicio 4  
-Tutorial de docker realizado, comprobar en la siguiente [imágen](https://www.dropbox.com/s/f88cbc9xk1j1o1p/tutorial_docker.png?dl=0)
+Tutorial de docker realizado, comprobar en la siguiente [imágen](https://www.dropbox.com/s/f88cbc9xk1j1o1p/tutorial_docker.png?dl=0)  
+
+###Ejercicio 5  
+Para instalar git en nuestro servidor linux, basta con ejecutar el siguiente comando como usuario root
+		`apt-get install -y git`  
+
+
