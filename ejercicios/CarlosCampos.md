@@ -47,8 +47,14 @@ En el caso de Google Compute Engine, utilizaremos **n1-standard-4**, el cuál es
 	GCE: 0.252 $/h * 876 h = 220,752 $ -> 173,022 €  
 
 
+###Ejercicio 3  
+#####Apartado a  
+Comentado en el [foro](https://github.com/JJ/GII-2014/issues/71)  
 
-
-
-
-
+#####Apartado b  
+Aprovechando un [programa](https://github.com/ccamposfuentes/DAI/blob/master/p1/e1.py) sencillo desarrollado en la asignatura de **Desarrollo de Aplicaciones para Internet**.  
+- En primer lugar, tenemos que descargar [cde](https://github.com/downloads/pgbovine/CDE/cde_2011-08-15_64bit), en mi caso la versión de 64 bits.  
+- Tan solo tenemos que ejecutar el programa:  
+		`./cde_2011-08-15_64bits ./e1.py  `
+- Podemos ver que se ejecuta el programa perfectamente en la siguiente imágen.  
+		`[CDE en funcionamiento](https://www.dropbox.com/s/9ewxd7635dwk2cz/cde-ejecutado.png?dl=0) `
