@@ -66,5 +66,24 @@ Tutorial de docker realizado, comprobar en la siguiente imágen ![imágen](http:
 Para instalar git en nuestro servidor linux, basta con ejecutar el siguiente comando como usuario root
 		`apt-get install -y git`  
 
-###Ejercicio 6
+###Ejercicio 6  
+1. Creamos el proyecto a través de la página web de github y lo clonamos en nuestro equpo a través del comando:  
+	`git clone git://github.com/<repositorio>`  
+
+2. Una vez qu tenemos el repositorio creado, modificas el archivo readme.md y para actualizarlos debemos de ejecutar:  
+	`git commit README.md`  
+	`git commit -m "Nombre del commit"`  
+
+Podemos ver un archivo README.md de un repositorio personal con el texto personalizado en la siguiente imágen:
+![Imagen readme.md](http://i.imgur.com/Myjv3bF.png)  
+  
+ 
+
+
+
+
+
+
+
+
 
