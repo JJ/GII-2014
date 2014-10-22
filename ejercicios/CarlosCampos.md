@@ -57,13 +57,14 @@ Aprovechando un [programa](https://github.com/ccamposfuentes/DAI/blob/master/p1/
 - Tan solo tenemos que ejecutar el programa:  
 		`./cde_2011-08-15_64bits ./e1.py  `
 - Podemos ver que se ejecuta el programa perfectamente en la siguiente imágen.  
-		`[CDE en funcionamiento](https://www.dropbox.com/s/9ewxd7635dwk2cz/cde-ejecutado.png?dl=0) `
+		![Imagen](http://i.imgur.com/cqi2xzt.png)
 
 ###Ejercicio 4  
-Tutorial de docker realizado, comprobar en la siguiente [imágen](https://www.dropbox.com/s/f88cbc9xk1j1o1p/tutorial_docker.png?dl=0)  
+Tutorial de docker realizado, comprobar en la siguiente imágen ![imágen](http://i.imgur.com/cZKeDaO.png)  
 
 ###Ejercicio 5  
 Para instalar git en nuestro servidor linux, basta con ejecutar el siguiente comando como usuario root
 		`apt-get install -y git`  
 
+###Ejercicio 6
 
