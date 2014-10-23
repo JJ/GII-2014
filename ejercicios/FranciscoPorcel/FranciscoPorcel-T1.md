@@ -77,7 +77,7 @@ Como podemos observar, el precio de amazon es casi tres veces mejor que el de az
 
 #### 1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro. (¿Qué tipo de virtualización es la más adecuada para: alojar varios clientes en un sólo servidor, crear un sistema eficiente de web + middleware + base de datos, un sistema de prueba de software e integración continua? Responder aquí y razonar.)
 
-![Respuesta en el foro](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/3_1.png)
+![Respuesta en el foro](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/3_1.png)
 
 
 #### 2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
@@ -89,7 +89,7 @@ Como podemos observar, el precio de amazon es casi tres veces mejor que el de az
 
 Después de realizar el tutorial nos sale un mensaje de felicitación:
 
-![Mensaje de felicitación](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/4.png)
+![Mensaje de felicitación](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/4.png)
 
 ## Ejercicio 5
 
@@ -110,23 +110,23 @@ Una vez hecho esto, debemos clonar la carpeta de GitHub en nuestro ordenador. Pa
 
 En primer lugar creamos el nuevo proyecto. En mi caso lo he nombrado "Nuevo Proyecto".
 
-![Creación de un nuevo proyecto](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/6_1.png)
+![Creación de un nuevo proyecto](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/6_1.png)
 
 A continuación nos descargamos la carpeta a nuestro pc.
 
-![Descarga de los archivos](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/6_2.png)
+![Descarga de los archivos](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/6_2.png)
 
 Modificamos el archivo README.md.
 
-![Modificación del archivo README.md](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/6_3.png)
+![Modificación del archivo README.md](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/6_3.png)
 
 Subimos la carpeta modificada a GitHub.
 
-![Subimos la carpeta a GitHub](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/6_4.png)
+![Subimos la carpeta a GitHub](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/6_4.png)
 
 Como podemos observar, los cambios se han realizado:
 
-![Cambios realizados en GitHub](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/6_5.png)
+![Cambios realizados en GitHub](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/6_5.png)
 
 
 ## Ejercicio 7
@@ -135,7 +135,7 @@ Como podemos observar, los cambios se han realizado:
 
 Mi sistema operativo es Ubuntu 14.04 y como se comenta en la documentación cgroups está montado en /sys/fs/cgroup. Esta carpeta contiene una serie de archivos que permiten controlar y monitorizar la actividad de los diferentes grupos de control.
 
-![Punto de montaje de cgroups](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/7_1.png)
+![Punto de montaje de cgroups](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/7_1.png)
 
 
 ## Ejercicio 8
@@ -144,7 +144,7 @@ Mi sistema operativo es Ubuntu 14.04 y como se comenta en la documentación cgro
 
 En primer lugar he creado tres grupos de control:
 
-![Grupos de control](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/8_1.png)
+![Grupos de control](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/8_1.png)
 
 Una vez hecho esto le asigno al primer grupo el proceso de "mozilla" (número 2529), al segundo grupo el procesador de textos (número 10593) y al tercero el el proceso del spotify (número 2749).
 
@@ -167,7 +167,8 @@ Una vez hecho esto le asigno al primer grupo el proceso de "mozilla" (número 25
 
 Mi procesador es un Intel Core 2 Duo. Como salida de la orden aparece la línea en la que se encuentra el flag "vmx". Como mi procesador no es AMD el flag svm no aparece.
 
-![Flags activos](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/10_1.png)
+![Flags activos](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/10_1.png)
+https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/10_1.png
 
 ## Ejercicio 11
 
@@ -175,7 +176,7 @@ Mi procesador es un Intel Core 2 Duo. Como salida de la orden aparece la línea 
 
 Ejecutamos la orden y nos muestra lo siguiente:
 
-![kvm-ok](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/11_1.png)
+![kvm-ok](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/11_1.png)
 
 Por lo cual mi ordenador no contiene este módulo kernel.
 
@@ -183,7 +184,7 @@ Por lo cual mi ordenador no contiene este módulo kernel.
 
 #### Comentar diferentes soluciones de Software as a Service de uso habitual
 
-![Comentario en el foro](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema1/12_1.png)
+![Comentario en el foro](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/12_1.png)
 
 # Tema 2
 
@@ -193,7 +194,7 @@ Por lo cual mi ordenador no contiene este módulo kernel.
 
 Voy a instalar el entorno "virtualenv":
 
-![Instalando virtualenv](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema2/1_1.png)
+![Instalando virtualenv](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema2/1_1.png)
 
 ## Ejercicio 2
 
@@ -201,7 +202,7 @@ Voy a instalar el entorno "virtualenv":
 
 Me doy de alta en "OpenShift":
 
-![Instalando virtualenv](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema2/2_1.png)
+![Instalando virtualenv](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema2/2_1.png)
 
 ## Ejercicio 3
 
@@ -209,23 +210,23 @@ Me doy de alta en "OpenShift":
 
 En primer lugar nos logueamos en OpenShift. Una vez hecho esto elegimos la opción "Crear mi primera app". Nos saldrá una pantalla como la siguiente. En esta pantalla buscaremos Wordpress en el cuadro de búsqueda para instalarlo en nuestra app.
 
-![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema2/3_1.png)
+![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema2/3_1.png)
 
 En la siguiente pantalla deberemos rellenar un formulario en el que se nos pedirá entre otras cosas el nombre de dominio de nuestra app:
 
-![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema2/3_2.png)
+![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema2/3_2.png)
 
 Finalemte podemos observar como se ha creado el sitio con éxito:
 
-![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema2/3_3.png)
+![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema2/3_3.png)
 
 Si entramos en el sitio web, podemos ver cómo podemos empezar a configurarlo:
 
-![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema2/3_4.png)
+![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema2/3_4.png)
 
 Una vez realizada la configuración, accederemos como editores a la web y podremos comenzar a editarlo:
 
-![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/Tema2/3_5.png)
+![Primera app en openshift](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema2/3_5.png)
 
 
 
