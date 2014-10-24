@@ -82,9 +82,12 @@ En mi instalación de linux (Xubuntu), se encuentra instalado en el directorio:
 	`/sys/fs/cgroup`  
 	
 El contenido de la carpeta es el que podemos ver en la siguiente imágen:  
-![Imagen cgroup](http://i.imgur.com/3hVvhNY.png)  
+	![Imagen cgroup](http://i.imgur.com/3hVvhNY.png)  
 
+###Ejercicio 10 
+Mi procesador es: Intel Core 2 Duo  
 
+Al ejecutar el comando, no me aparece nada por pantalla, por lo que no tengo los flags activados  
 
 
 
