@@ -77,7 +77,14 @@ Para instalar git en nuestro servidor linux, basta con ejecutar el siguiente com
 Podemos ver un archivo README.md de un repositorio personal con el texto personalizado en la siguiente imágen:
 ![Imagen readme.md](http://i.imgur.com/Myjv3bF.png)  
   
- 
+###Ejercicio 7  
+En mi instalación de linux (Xubuntu), se encuentra instalado en el directorio:  
+	`/sys/fs/cgroup`  
+	
+El contenido de la carpeta es el que podemos ver en la siguiente imágen:  
+![Imagen cgroup](http://i.imgur.com/3hVvhNY.png)  
+
+
 
 
 
