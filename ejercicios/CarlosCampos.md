@@ -91,6 +91,7 @@ Al ejecutar el comando, no me aparece nada por pantalla, por lo que no tengo los
 
 ###Ejercicio 11  
 Tras ejecutar *kvm-ok*, nos aparece que la CPU no lo soporta.  
+  
 	"INFO: Your CPU does not support KVM extensions"  
 	
 ### Ejercicio 12  
