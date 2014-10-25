@@ -1,0 +1,59 @@
+*Ejercicio 1:
+
+[Servidor buscado](http://www.dynos.es/servidor-blade-hp-proliant-bl460c-gen8-xeon-e5-2640v2-2ghz-32gb-ddr3--4514953608993__724085-B21.html)
+Precio 3230€; Amortizacón 15% = 484,5€
+
+En 4 años se amortiza 1938,8€
+En 7 años se amortiza 3391,9€ 
+
+
+*Ejercicio 2:
+Comparando las tablas de [Windows Azure](http://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines)
+y la de [Hostinger](http://www.hostinger.es/hosting-vps)
+
+Elegimos una configuración de 1 CPU y 1.75 GB de RAM con 2000 GB de ancho de banda en Windows azure; En Hostinger elegimos 2 GB de RAM y 2000 GB de ancho de banda.
+Al mes bajo la plataforma de Windows sale a: 202,06€ al año tendría un coste de 2424,72€
+Al mes bajo la plataforma de Hostinger sale a: 13,99€ al año tendria un coste de 167,88€
+
+Si sólo usaramos el 1% del tiempo, pagaríamos 24,24€ con Windows y 167,88€ con Hostinger
+Si sólo usaramos el 10% del tiempo, pagaríamos 242,47€ con Windows y 167,88€ con Hostinger
+
+
+
+
+*Ejercicio 3:
+  -1 : ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
+  Esta comentado en el foro: [link](https://github.com/JJ/GII-2014/issues/71#issuecomment-59713877)
+  
+-En primer caso usaria la virtualizacion a nivel de sistema operativo, coincidiendo con mis compañeros, por las ventajas que esto permite en la gestion de cuentas de usuarios
+
+-Para el sistema eficiente de middleware+web+BD usaria la virtualizacion de aplicaciones, ya que solo habria que configurar las aplicaciones necesarias y evitamos con esto más complicaciones que si tuvieramos que virtualizar el sistema operativo completo y configurarlo a nuestro requisito
+
+-Para un sistema de prueba de software e integración continua,  usaria una virtualizacion de entornos de desarrollo ya que vamos a realizar pruebas de software y este tipo de virtualizacion esta diseñado para este aspecto
+
+-2:Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+		He creado un programa simple en python. He descargado CDE:
+
+		[Aqui](http://i.imgur.com/GgMOOOm.png) muestra la captura del programa empaquetado y ejecutado.
+		
+*Ejercicio 4
+	Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+	
+	[Aqui](http://i.imgur.com/RbE84Wx.png) muestra el final del tutorial de docker
+	
+*Ejercicio 5
+	Instala el sistema de gestión de fuentes git
+		 Lo instalamos con el comando **sudo apt-get install git git-core**
+		 [Aqui](http://i.imgur.com/GtVQQFx.png) muestra la captura mostrando la version de git instalada
+		 
+		 
+
+
+*Ejercicio 6 
+	Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+	Modificar el readme y subir el fichero modificado.
+	
+		Aqui muestra la captura de pantalla del comando push y el correspondiente archivo visto en la web de github.
+		![Captura ejercicio 6](http://i.imgur.com/CpJKuXo.png)
+		
