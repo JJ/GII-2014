@@ -17,3 +17,138 @@ Cada año se amortizaría un 25%, con lo que tendríamos una cantidad  de 568,8 
 **Amortización a 7 años**
 
 Cada año se amortizaría un 14.28%, con lo que tendríamos una cantidad de 568,8 * 0.1428 = 81,22 € cada año.
+
+
+
+
+# Ejercicio 2 #
+
+## Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo. ##
+
+[Servidor dedicado](http://www.acens.com/hosting/hosting-gestionado/servidores-dedicados/)
+
+1x Quad Core 
+
+2GB RAM
+
+2x500GB SATA RAID1
+
+Precio:154,3 €/mes
+
+
+[Servidor cloud](http://www.acens.com/cloud/cloud-servers/)
+
+vCPU:	4
+
+RAM:  2
+
+Disco: 1000GB
+
+Precio: 446.4 €/mes
+
+
++Precio anual en Servidor Dedicado: 154,3€/mes * 12 = 1851,6 €/año.
++Precio anual en Cloud Server: 446.4 €/mes(0.62€/h) * 12 = 5356,8 €/año.
+
++Si se utiliza un 1%:
+  +Servidor Dedicado: 1851,6 €/año .
+  +Cloud Server: 53,568 €/año (30*24*12=8760 horas/año * 0.62€/h = 5356,8 €).
+
++Si se utiliza un 10%:
+  +Servidor Dedicado: 1851,6 €/año.
+  +Cloud Server: 535,68 €/año 
+  
+# Ejercicio 3 #
+##  ¿Qué tipo de virtualización es la más adecuada para: alojar varios clientes en un sólo servidor, crear un sistema efiiciente de web + middleware + base de datos, un sistema de prueba de software e integración continua? Responder aquí y razonar.  ##
+**Alojar varios clientes en un sólo servidor:**
+
+Virtualización a nivel de sistema operativo ya que permite que anfitrión y cliente usen el mismo sistema operativo pero con invitados aislados del anfitrión y entre sí 
+
+**Crear un sistema eficiente de web +middleware+ base de datos:**
+
+Virtualización plena, ya que nos permite virtualizar todos los aspectos de un ordenador para poder ejecutar sistemas operativos y otros programas sin modificar. 
+
+**Sistema de prueba de software e integración continua**
+Virtualización de entornos de desarrollo ya que permite reproducir entornos de producción de la forma más fiel posible y probar una aplicación en diferentes versiones con una sola orden.
+
+## Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones. ##
+
+Instalamos CDE:
+
+!(https://github.com/leocm89/prueba/Imagenes/ejercicio3.png)
+
+Creamos un programa en python:
+
+:::python 
+  #!/usr/bin/python
+  # -*- coding: utf-8 -*-
+  limite = input("Introduce hasta que número quieres calcular los primos: ")
+
+  l = range(limite)
+
+  for i in range(2, limite):
+    if l[i] != -1:   # Si no esta marcado es primo
+      print i
+    for h in range(i, limite, i):
+      l[h] = -1 # Marcamos los múltiplos de i
+
+Le damos los permisos de ejecución correspondientes y usamos cde para crear el paquete portable.
+
+~~~
+cde ./criba.py
+~~~
+
+# Ejercicio 4 #
+##Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.##
+!(https://github.com/leocm89/prueba/Imagenes/ejercicio4.png)
+
+# Ejercicio 5 #
+##Instala el sistema de gestión de fuentes git##
+
+Para instalar git en ubuntu ejecutamos en la terminal el siguiente comando:
+~~~
+ sudo apt-get install git 
+~~~
+
+
+
+# Ejercicio 6 #
+## 1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. ##
+Creamos el repositorio marcando la opcón incluir el fichero README:
+!(https://github.com/leocm89/prueba/Imagenes/ejercicio6_1.png)
+
+Lo descargamos en nuestra máquina mediante git usando git clone:
+
+!(https://github.com/leocm89/prueba/Imagenes/ejercicio6_2.png)
+
+Modificamos el fichero README y subimos los cambios añadiendo el fichero y salvamos mediante un commit. 
+
+!(https://github.com/leocm89/prueba/Imagenes/ejercicio6_3.png)
+
+
+# Ejercicio 7 #
+## Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene ##
+En Ubuntu 14.04, se monta por defecto y está en /sys/fs/cgroup 
+
+!(https://github.com/leocm89/prueba/Imagenes/ejercicio7.png)
+
+#Ejercicio 10#
+##Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?##
+Lanzamos el comando indicado.
+
+~~~
+egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+~~~
+
+Al no mostrar nada, indica que el procesador no usa esta tecnologia.
+
+!(https://github.com/leocm89/prueba/Imagenes/ejercicio10.png)
+
+# Ejercicio 11 #
+## Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok. ##
+La ejecutamos y nos pide que instalamos cpu-cheker:
+
+!(https://github.com/leocm89/prueba/Imagenes/ejercicio11_1.png)
+
+Y vemos que mi sistema no lo soporta
+!(Imagenes/ejercicio11_2.png)
