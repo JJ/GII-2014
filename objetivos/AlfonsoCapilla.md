@@ -20,7 +20,7 @@
 ###Otros Objetivos
 [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura.
 
-[] Usar los métodos de entrega de ejercicios propuestos para la asignatura usando GitHub.
+[X] Usar los métodos de entrega de ejercicios propuestos para la asignatura usando GitHub.
 
 [X] Manejar de forma básica la línea de órdenes de Linux.
 
@@ -28,16 +28,16 @@
 
 ##Clase del 30 de Septiembre.
 
-[]  Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux.
+[X]  Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux.
 
-[]  Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+[X]  Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 
-[]  Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.
+[X]  Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.
 
 []  Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
 
 ###Otros Objetivos
-[] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.
+[X] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.
 
 [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura.
 
@@ -47,15 +47,39 @@
 
 []  Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 
-[]  Comprender los niveles de virtualización y sus denominaciones genéricas.
+[X]  Comprender los niveles de virtualización y sus denominaciones genéricas.
 
-[]  Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
+[X]  Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 
 ###Otros Objetivos
 []  Revisar algún ejercicio de un compañero y sugerir cambios o mejoras.
 
-[]  Contestar a la encuesta sobre la metodología de clase.
+[X]  Contestar a la encuesta sobre la metodología de clase.
 
-[]  Usar ficheros en el repositorio para los ejercicios.
+[X]  Usar ficheros en el repositorio para los ejercicios.
 
-[]  Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+[X]  Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+
+##Clase del 7 de Octubre.
+[X]Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
+
+###Otros objetivos
+
+[]Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+
+[]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+[X]Contestar a la encuesta sobre la metodología de clase
+
+##Clase del 14 de Octubre.
+[]Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+
+[]Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+
+###Otros objetivos
+
+[]Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+
+[]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+[]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.

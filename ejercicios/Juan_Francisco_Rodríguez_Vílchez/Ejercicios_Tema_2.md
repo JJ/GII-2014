@@ -98,3 +98,27 @@ Aqui muestro un ejemplo de creación de una entrada en WordPress:
 ![captura30](http://i.imgur.com/0OpvoAM.png)
 
 ***
+
+### Ejercicio 4 ###
+
+**Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.**
+
+He seguido el siguiente tutorial: https://developers.google.com/apps-script/guides/menus
+
+He accedido a través de Herramientas -> Editor de secuencias de comandos y he añadido el siguiente script:
+
+![captura31](http://i.imgur.com/F5Gg3lK.png)
+
+En el script anterior, cambio el nombre a un menú al que he llamado "Menú Custom" con dos item "Sublime" y "Precioso":
+
+![captura32](http://i.imgur.com/LLpcG8j.png)
+
+ Posteriormente, he creado dos funciones (que se llaman a través de los item anteriores) de tal forma que cuando se seleccione algún item se lance una alerta.
+ 
+Al cliquear en el item "Sublime", se llama a la función "sublime" y se lanza la siguiente alerta:
+ 
+![captura33](http://i.imgur.com/eMJBoxz.png)
+
+Al cliquear en el item "Precioso", se llama a la función "precioso" y se lanza la siguiente alerta:
+ 
+![captura34](http://i.imgur.com/XAMrWEb.png)

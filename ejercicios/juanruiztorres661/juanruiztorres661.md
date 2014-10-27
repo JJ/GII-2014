@@ -1,5 +1,5 @@
 #Ejercicios de Juan Antonio Ruiz.
-### Ejercicio 1
+### Ejercicio 1.
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor
 y calcular su coste de amortización a cuatro y siete años. [Consultar este artículo en Infoautónomos sobre el tema.](http://www.infoautonomos.com/consultas-a-la-comunidad/988)**
 
@@ -32,7 +32,7 @@ El precio del [servidor seleccionado](http://fujitsu-shop.anima-its.com/formato-
 Comparando costes de [Hostalia](http://www.hostalia.com/dedicados/) desde 99€/mes y [Azure](http://azure.microsoft.com/es-es/pricing/details/virtual-machines/#Windows) con características similares 99,79€/mes (0,1341€/h).
 
 ![Captura de pantalla de precios en Hostalia:](./imagenes/hostalia.png)
-
+========================================================================
 ![Captura de pantalla de precios en Azure:](./imagenes/azure.png)
 
 Si se usa la infraestructura un 1%:
@@ -44,12 +44,175 @@ Si se usa la infraestructura un 10%:
 - Hostalia: 99€*12meses = 1188€/año independientemente del tiempo que se utilice.
 
 * * *
+
 ### Ejercicios 3.
 **1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.**
 
+[Comentario](https://github.com/JJ/GII-2014/issues/71#issuecomment-59784692) realizado en el foro.
+
+
 **2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
+En caso de no tener CDE instalado, en Ubuntu puede hacerse con el comando:
+
+`` sudo apt-get install cde ``
+
+Para este ejercicio utilizo un programa en python que ordena una lista aleatoria de 10000 elementos con el método de burbuja y muestra el tiempo que emplea en hacerlo cuyo código es el siguiente:
+
+```
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import time
+import random
+
+# Genera lista de numeros aleatorios.
+def generaListaAleatoria():
+  tamLista = 10000;
+
+  lista = []
+
+  for i in range(tamLista):
+    lista.append(random.randint(0, 10000000));
+    
+  return lista
+
+# Ordenacion burbuja
+def burbuja(lista):
+  for i in range(len(lista)):
+    for h in range(i, len(lista) - 1):
+      if (lista[h] > lista[h+1]):
+        aux = lista[h]
+        lista[h] = lista[h + 1]
+        lista[h + 1] = aux
+
+# lista aleatoria.
+lista = generaListaAleatoria()
+
+# print lista1
+start = time.clock()
+burbuja(lista)
+end = time.clock()
+
+# print tiempo empleado en lista.
+print "El método de burbuja ha tardado %f segundos" %(end - start)
+```
+
+Para empaquetarlo con CDE utilizo:
+
+`` cde ./burbuja.py ``
+
+
+
+
 * * *
+
+### Ejercicios 4. 
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
+Realizado.
+
+**Avanzado Instalarlo y crear una aplicación contenedorizada**
+
+* * *
+### Ejercicio 5. 
+**Instala el sistema de gestión de fuentes git**
+
+Captura de pantalla en la que se ve el comando utilzado para instalar git, aunque en mi caso ya lo tenía instalado.
+![](./imagenes/installGit.png)
+
+* * *
+
+### Ejercicios 6. 
+**1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+
+Creo el proyecto:
+![](./imagenes/6.1.png)
+=======================
+
+Descardando el proyecto desde la consola:
+![](./imagenes/6.2.png)
+=======================
+
+**2.Modificar el readme y subir el fichero modificado.**
+
+Modificando el fichero README.md desde la consola y subiendo a github.
+![](./imagenes/6.3.png)
+
+* * *
+
+### Ejercicios 7. 
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
+
+Verifico que el kernel soporte cgroup:
+
+![](./imagenes/cgroup1.png)
+===========================
+
+Comprobando la versión de ubuntu instalada y el contenido de /sys/fs/cgroup que es el punto de montaje por defecto para ubuntu 14.04.
+![](./imagenes/cgroup.png)
+==========================
+
+En mi caso tengo instalado cgroup-lite como puede verse en la siguiente imagen por lo que para crear grupos hay que hacerlo dentro de directorios determinados.
+
+![](./imagenes/cgroup2.png)
+===========================
+
+* * *
+
+### Ejercicios 8. 
+**1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
+
+**2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
+
+* * *
+
+### Ejercicios 9. 
+**1.Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
+
+**2.Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
+
+**3.Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
+
+**4.Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
+
+* * *
+
+### Ejercicios 10. 
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Como puede verse en la siguiente captura de pantalla, se trata de un procesador Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz. y como salida de la orden ``egrep '^flags.*(vmx|svm)' /proc/cpuinfo`` no aparece nada puesto que los flags no están en el fichero y por tanto el procesador tiene la funcionalidad desactivada.
+
+![](./imagenes/cpuinfo.png)
+
+
+* * *
+
+### Ejercicios 11. 
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+Al encontrarme trabajando desde una máquina virtual, mi configuración hace que no pueda usar KVM.ç
+
+![](./imagenes/kvm-ok.png)
+
+* * *
+
+### Ejercicios 12. 
+**Comentar diferentes soluciones de Software as a Service de uso habitual**
+
+* * *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 

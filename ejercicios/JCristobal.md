@@ -1,4 +1,4 @@
-#Ejercicios de JCristobal
+#Ejercicios de JCristobal (José Cristóbal López Zafra)
 
 
 # Tema 1
@@ -200,6 +200,16 @@ Aunque para comprobar la consulta de recursos veo la total:
 
 ![imagen6](http://i.imgur.com/fOceyRU.png)  
 
+### Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+
+Supondremos un ordenador con Core i7-920 + GTX295, de un precio aproximado de 1000€. Para los gastos eléctricos supondremos una consumo de 2 horas en reposo y 4 horas de trabajo diarios,  108.32 € anuales de gasto eléctrico. (calculado [aquí](http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad))
+
+En una amortización de 5 años, ya que el mínimos son 4 años, al 20% cada año se queda:
+
+1000€ + (108.32€ * 5 años) = 1541,60 € en total
+
+ó 1000€/5 años + 108.32 = 308,32€ anual
+
 
 
 ##Ejercicio 9
@@ -323,6 +333,9 @@ Ejecutamos kvm-ok y nos dice que sí está utlizado, lo podemos usar.
 Aquí el enlace al [comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-59173713)
 
 
+***
+***
+
 
 # Tema 2
 
@@ -385,6 +398,31 @@ Después nos registramos en WordPress y accedemos:
 Creamos una nueva entrada para probarlo:
 
 ![imagen5](http://i.imgur.com/75qlAHv.png)
+
+
+
+##Ejercicio 4
+###Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama. 
+
+En un documento de Google Drive accedemos a Herramientas -> Editor de secuencias de comandos
+
+Creamos una nueva función (miFuncion()):
+
+![imagen1](http://i.imgur.com/DTDlxEQ.png)
+
+y la añadimos al menú, compilamos y la subimos a la nube pulsando el botón del menú.
+
+Después, dentro del documento, nos vamos a ese menú (Sample) y seleccionamos nuestra función:
+
+![imagen2](http://i.imgur.com/9Zdmuaz.png)
+
+
+
+
+
+
+
+
 
 
 

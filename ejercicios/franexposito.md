@@ -1,4 +1,4 @@
-#Ejercicios de Fran Expósito
+#Ejercicios de [Francisco Javier Expósito Cruz](http://github.com/franexposito)
 
 ##Introducción a la infraestructura virtual: concepto y soporte físico
 ###Ejercicio 1.
@@ -48,7 +48,7 @@ Google: 0,114834658 * 876 horas = 100,595160408 euros
 
 ###Ejercicio 3.
 ######Apartado a
-[Comentario en el foro](https://github.com/JJ/GII-2014/issues/71)
+[Comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-60100625)
 
 ######Apartado b
 Para la realización de este ejercicio he optado por una sencilla aplicación en phyton desarrollada para la asignatura de Desarrollo de Aplicaciones en Internet. 
@@ -74,7 +74,10 @@ Finalmente probamos el paquete en otra distribución para ver que funciona corre
 En mi [repositorio de Github](https://github.com/franexposito) se pueden apreciar la creación de varios proyectos con la inclusión y modificiación del archivo README. Por ejemplo en [este proyecto](https://github.com/franexposito/bkst-calculator/blob/master/README.md)
 
 ###Ejercicio 7.
-[] Pendiente por desarrollar  
+En mi caso se encuentra situado en: 
+<pre><code>/sys/fs/cgroups</code></pre>
+Y podemos ver que el contenido haciendo un ls:  
+[imagen6](http://i.imgur.com/6WqOGkz.png)  
 
 ###Ejercicio 8.
 [] Pendiente por desarrollar  
@@ -92,4 +95,3 @@ Obtenemos, en mi caso, que no está soportado.
 
 ###Ejercicio 11.
 [x] Comentar diferentes soluciones de Software as a Service de uso habitual [Comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-58912586).  
-

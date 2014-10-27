@@ -22,8 +22,8 @@
 
 ##Clase del 30 de Septiembre.
 
-* [ ]   Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux. <br />
-* [ ]   Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores. <br />
+* [X]   Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux. <br />
+* [X]   Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores. <br />
 * [X]   Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa. <br />
 * [X]   Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones. <br />
 
@@ -34,10 +34,10 @@
 
 ##Clase del 6 de Octubre.
 
-* [ ]   Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores. <br />
+* [X]   Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores. <br />
 * [X]   Comprender los niveles de virtualización y sus denominaciones genéricas. <br />
-* [ ]   Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección. <br />
-* [ ]   Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones. <br />
+* [X]   Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección. <br />
+* [X]   Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones. <br />
 
 ###Otros Objetivos
 * [X]   Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. <br />
@@ -69,11 +69,23 @@
 * [X]   Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
 ##Clase del 20 de Octubre.
-* [ ]   Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo..
-Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
-* [ ]  Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
-* [ ]  Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+* [X]   Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo..
+* [X]    Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+* [X]   Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
+* [X]  Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
 ###Otros Objetivos
 * [ ]   Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
-* [ ]   Comprender el método de entrega de las prácticas de la asignatura.
+* [X]   Comprender el método de entrega de las prácticas de la asignatura.
+
+##Clase del 21 de Octubre.
+* [ ] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+* [ ] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+* [ ] Crear nuevas funciones en un SaaS.
+
+###Otros Objetivos
+* [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+* [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [ ] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+* [X] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+

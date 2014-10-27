@@ -180,6 +180,45 @@ Con una configuración de ordenador de 600 €, ya podemos amortizarlo de la sig
 
 ## Ejercicio 9
 
+En debian no he conseguido encontrar el fichero de configuracion.
+```
+mount {
+        cpu = /sys/fs//cgroup/cpu;
+        cpuacct = /sys/fs/cgroup/cpuacct;
+        devices = /sys/fs/cgroup/devices;
+        memory = /sys/fs/cgroup/memory;
+}
+
+group groupname/users {
+	  cpu {
+	    cpu.shares = 20;
+	  }
+	  memory {
+        memory.limit_in_bytes="128000"; 
+        }
+       }
+group groupname/system { 
+    cpu {
+        cpu.shares="80"; 
+    }
+    memory {
+        memory.limit_in_bytes="256000"; 
+        }
+     }
+
+
+```
+
+
+![alt tag](http://i.imgur.com/jBmub9j.png)
+
+Para cambiar la prioridad de entrada y salida de un servidor web, tenemos que modificar el grupo en el que esta el servidor web, y editar el archivo modificando el parametro blkio.
+Ejemplo:
+group Sweb{ 
+	blkio{ 
+		blkio.weight = 140
+	} 
+}
 
 ## Ejercicio 10
 
@@ -188,3 +227,13 @@ Con una configuración de ordenador de 600 €, ya podemos amortizarlo de la sig
 ## Ejercicio 11
 
 La orden proviene del paquete cpu-checker que no se encuentra para debian por lo tanto da error.
+
+## Ejercicio 12
+
+Contestada en el foro.
+
+# Tema 2
+
+## Ejercicio 2
+
+Registrado en Heroku.

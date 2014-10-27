@@ -65,8 +65,7 @@ Dimension Data: 0,06072 euros/hora. * 876 horas = 53,19072 euros.<br />
 
 ###Ejercicio 3
 3.1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
-
-### RECORDATORIO: Poner comentarios en el foro. ###
+Comentario añadido al foro.
 
 3.2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
@@ -113,20 +112,26 @@ Al modificar ejecutaremos git commit -m "modificado", y finalmente lo subimos:
 
 ![7](http://s15.postimg.org/aldx08wiz/Captur_Files_1.png)
 
-
 ###Ejercicio 7
+Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.
+
+Tal como indica el guión de ejercicios, en la distribución que tengo instalada (Ubuntu 14.04) viene montada por defecto. A continuación se muestra una captura de los comandos ejecutados para responder a las cuestiones del ejercicio:
+
+![11](http://s29.postimg.org/4b6nq3exz/Captura_de_pantalla_2014_10_27_a_las_10_02_40.png)
+
+Atendiendo a la captura vemos que cgroups está instalado y montado en /sys/fs, además del contenido de la carpeta.
+
+###Ejercicio 8
 1. Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. <br />
 2. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 
-
-###Ejercicio 8
+###Ejercicio 9
 1. Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU. <br />
 2. Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
 3. Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
 4. Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
-
-###Ejercicio 9
+###Ejercicio 10
 Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
 Para comprobar si está activada (disponible) la virtualización a nivel de hardware deberemos ejecutar el siguiente comando: <br />
@@ -140,7 +145,7 @@ Respecto al modelo de procesador, podemos consultar /proc/cpuinfo:
 
 En este caso sólo he recogido en la captura la información respecto al procesador 0, ya que no es necesario incluir información no relevante y de por sí es suficientemente aclaratorio.
 
-###Ejercicio 10
+###Ejercicio 11
 Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
 Vamos a comprobar que el núcleo KVM esté instalado. Usaremos el comando kvm-ok (necesitaremos instalar cpu-checker si no lo tenemos instalado):
@@ -149,7 +154,7 @@ Vamos a comprobar que el núcleo KVM esté instalado. Usaremos el comando kvm-ok
 
 Vemos que, efectivamente, existe y la aceleración se puede usar.
 
-###Ejercicio 11
+###Ejercicio 12
 Comentar diferentes soluciones de Software as a Service de uso habitual.
 
 Vamos a comentar 3 ejemplos de soluciones SaaS comunes. Si queremos más información podemos consultar este útil enlace con los [20 principales proveedores](http://www.clouds360.com/saas.php)

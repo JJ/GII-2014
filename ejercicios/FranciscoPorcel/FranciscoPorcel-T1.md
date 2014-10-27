@@ -168,7 +168,6 @@ Una vez hecho esto le asigno al primer grupo el proceso de "mozilla" (número 25
 Mi procesador es un Intel Core 2 Duo. Como salida de la orden aparece la línea en la que se encuentra el flag "vmx". Como mi procesador no es AMD el flag svm no aparece.
 
 ![Flags activos](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/10_1.png)
-https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema1/10_1.png
 
 ## Ejercicio 11
 

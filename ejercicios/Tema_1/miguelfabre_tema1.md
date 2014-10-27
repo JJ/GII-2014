@@ -96,6 +96,10 @@ Después, para obtener tu carpeta de GitHub, crea una nueva carpeta, accede a el
 
 ##Ejercicio 6
 
+**1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+**2.Modificar el readme y subir el fichero modificado.** 
+   
+
 En primer lugar he creado un nuevo proyecto en GitHub añadiendo el fichero README tal como se indicaba en el enunciado.
 
 ![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio6-1.png)
@@ -118,3 +122,44 @@ Como vemos, la modificación ha resultado exitosa.
 
 ![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio6-4.png)
 
+##Ejercicio 7
+
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
+
+Primero he comprobado si inicialmente el sistema de ficheros virtual estaba ya activado utilizando la orden: 
+
+*/sys/fs/cgroups*
+
+Dado que no existía dicho sistema de ficheros, he procedido a montarlo para poder visualizar lo que tiene.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio7-1.png)
+
+Lo que podemos ver son archivos de soporte a grupos de tareas en el Kernel de Linux, que permiten controlar y monitorizar la actividad de los diferentes grupos de control.
+
+##Ejercicio 10
+
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Ejecutamos la orden indicada en el guión y vemos que efectivamente el procesador tiene activos estos flags.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio10-1.png)
+
+El procesador del que hablamos es un Intel(R) Core(TM) i3 CPU M 370  @ 2.40GHz
+
+##Ejercicio 11
+
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+
+Ejecutamos la orden tal como indica el enunciado y tal como podemos ver el núcleo de mi ordenador no contiene este módulo del kernel.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio11-1.png)
+
+##Ejercicio 12
+
+**Comentar diferentes soluciones de Software as a Service de uso habitual**
+
+SaaS (del inglés "Software as a Service") es el término empleado para denominar a aquellos servicios que son empleados en línea, es decir, que el usuario no necesita instalar en su propio equipo. Existen múltiples ejemplos de SaaS que todos empleamos habitualmente, como los servicios online de correo electrónico (gmail,yahoo,outlook), los servicios de almacenamiento en la nube (Mega,Dropbox,iCloud) y, en el caso de muchos estudiantes, el servicio de impresión empleado en la UGR denominado Copicloud. 
+
+Como ventajas, podemos destacar el hecho de poder hacer uso de estas aplicaciones desde cualquier dispositivo con acceso a internet, además de que el soporte de la aplicación es 24 horas e inmediato. También, tus archivos están más seguros en cuanto a disponibilidad, es decir, díficilmente dichos SaaS de almacenamiento masivo perderán todos los datos almacenados, siendo más probable perderlos si los tienes en tu PC y éste sufre algún imprevisto irreversible.
+
+Por otro lado, como desventajas, el hecho de acceder a estos servicios mediante internet puede conllevar algunos peligros en cuanto a confidencialidad y privacidad, por parte tanto del proveedor del servicio así como de otros usuarios con malas intenciones.

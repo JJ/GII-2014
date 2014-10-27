@@ -1,6 +1,9 @@
 Lista de ejercicios Israel Blancas Álvarez
 ============================
 
+#TEMA 1: Introducción a la infraestructura virtual: concepto y soporte físico#
+
+
 ##Sesión 29-09-2014##
 
 ###Ejercicio 1###
@@ -68,9 +71,8 @@ Amortización:
 ***
 
 ###Ejercicio 3###
-#####
-1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
-2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.#####
+##### 1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro#####
+#####2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.#####
 
 ######[Parte 1ª](https://github.com/JJ/GII-2014/issues/71#issuecomment-58189129)######
 ######Parte 2ª#####
@@ -119,8 +121,7 @@ Al llevarlo a otra máquina, realizo el último paso y compruebo que funciona co
 ***
 
 ###Ejercicio 4###
-#####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
-Avanzado Instalarlo y crear una aplicación contenedorizada#####
+#####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada#####
 
 Tras hacer el tutorial, he procedido a realizar un empaquetado en mi PC.
 
@@ -150,17 +151,28 @@ He creado [un repositorio](https://github.com/iblancasa/iblancasaWordpressTheme)
 "git clone https://github.com/iblancasa/iblancasaWordpressTheme.git"
 
 #####2. Modificar el readme y subir el fichero modificado.##########
-Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWordpressTheme), he realizado algunas modificacioens en el ["readme"](https://github.com/iblancasa/iblancasaWordpressTheme/blob/master/README.md).
+Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWordpressTheme), he realizado algunas modificaciones en el ["readme"](https://github.com/iblancasa/iblancasaWordpressTheme/blob/master/README.md).
 
 
 
 ***
 ***
 ##Sesión 30-09-2014##
-
 ###Ejercicio 7###
+#####Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.#####
+Utilizo Ubuntu 14.04. Como se especifica en el enunciado unas líneas más arriba, se encuentra montado por defecto en "/sys/fs/cgroup".
+Contiene las siguientes carpetas:
+blkio  cpuacct  devices  hugetlb  perf_event
+cpu    cpuset   freezer  memory   systemd
 
-#####7.1 Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.#####
+Donde cada carpeta es un grupo de control.
+
+
+***
+
+###Ejercicio 8###
+
+#####8.1 Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.#####
 + He montado el sistema de archivos con "sudo mount -t tmpfs cgroup_root /sys/fs/cgroup"
 + He creado el directorio con "sudo mkdir /sys/fs/cgroup/cpuset", donde "cpuset" es el nombre del cgroup
 + Como dentro del directorio no se creó nada, he acudido a buscar en Internet y he encontrado [esto](http://serverfault.com/questions/478946/how-can-i-create-and-use-linux-cgroups-as-a-non-root-user). Al ejecutar el comando "sudo mount -t cgroup -o cpuset cpuset /sys/fs/cgroup/cpuset", para montar el sistema de archivos y "sudo mkdir /sys/fs/cgroup/cpuset/${USER}" y "sudo chown -R ${USER} /sys/fs/cgroup/cpuset/${USER}" para crear el cgroup con el usuario actual, si aparecen los ficheros que se describen en el material de clase.
@@ -183,7 +195,7 @@ Firefox
 
 
 
-#####7.2 Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.#####
+#####8.2 Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.#####
 En primer lugar hay que [tener en cuenta el gasto medio de un PC](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/)
 Coste eléctrico por año:
 365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh 
@@ -205,11 +217,12 @@ Precio total: 660.1€
 
 ***
 
-###Ejercicio 8###
-#####8.1 Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.#####
+###Ejercicio 9###
+
+#####9.1 Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.#####
 --
 
-#####8.2 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).#####
+#####9.2 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).#####
 
    
 ```
@@ -257,11 +270,11 @@ group system {
 
 
 
-#####8.3 Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).#####
+#####9.3 Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).#####
 Desconozco cómo se migra la carga de un procesador a otro. El uso de memoria se incrementaría (incluso podría necesitarse memoria de SWAP) y uno de los procesadores aumentaría su uso a la vez que el del otro descendería. 
 ![Ejecución de la orden htop](http://fotos.subefotos.com/1c350c29f3bacd01e2f11dd5a3251566o.jpg)
 
-#####8.4 Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.#####
+#####9.4 Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.#####
 
 He utilizado NGINX como servidor
 
@@ -285,11 +298,112 @@ group usuarios {
 }
 ```
 
+
 ***
-### Ejercicio 9###
+
+### Ejercicio 10###
 
 #####Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?#####
 El procesador es "Intel(R) Core(TM) i5-2410M CPU @ 2.30GHz".
 La salida del comando es la siguiente:
 
 ![Comprobación de flags](http://fotos.subefotos.com/23e6b32485a62eba2036dfb96d019585o.jpg)
+
+
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+
+***
+
+### Ejercicio 11###
+
+#####Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.#####
+Al intentar ejecutarlo, el sistema me ha solicitado que instalase un paquete. Tras instalarlo utilizando "sudo apt-get install cpu-checker", he ejecutado "kvm-ok" y he obtenido la siguiente salida:
+>INFO: /dev/kvm exists
+>KVM acceleration can be used
+
+Entiendo que puedo utilizar KVM.
+
+
+***
+
+###Ejercicio 12###
+#####Comentar diferentes soluciones de Software as a Service de uso habitual#####
+Mi [respuesta en el foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-59820896).
+
+
+
+***
+***
+***
+
+
+#TEMA 2: Introducción a la infraestructura virtual: concepto y soporte físico#
+
+
+##Sesión 2-10-2014##
+
+##Ejercicio 1##
+
+#####Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).#####
+He instalado el de Python (virtualenv) mediante:
+>sudo pip install virtualenv
+
+Después, he probado a crear el entorno virtual escribiendo en consola:
+>virtualenv proyecto
+
+
+***
+
+##Ejercicio 2##
+
+#####Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.#####
+Me he registrado en OpenShift.
+
+
+***
+
+##Ejercicio 3##
+#####Crear una aplicación en OpenShift y dentro de ella instalar WordPress.#####
+Tras solicitar crear una aplicación, se nos permite desplegar una aplicación de las que ya hay predefinidas. Insertando en el buscador "Wordpress". Después de esto, se nos pedirán algunos datos, como el nombre de dominio o el repositorio Git donde tenemos el código.
+Finalmente, se nos darán los datos necesarios para entrar a administrar nuestro Wordpress.
+[Ir a mi aplicación](http://wordpress-iblancasa.rhcloud.com/)
+
+
+
+***
+***
+
+##Sesión 2-10-2014##
+
+##Ejercicio 4##
+
+#####Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.#####
+He cambiado el nombre del menú y le he puesto una función que crea un cuadro de diálogo y pregunta por una respuesta de usuario.
+![Google Drive](http://fotos.subefotos.com/3d7f1666becd3469f68ff662d506fcd3o.jpg)
+
+Aquí podemos ver cómo aparece el menú nuevo.
+
+```javascript
+
+function onOpen() {
+  // Add a menu with some items, some separators, and a sub-menu.
+  DocumentApp.getUi().createMenu('Menú probado')
+      .addItem('Hola mundo', 'hola')
+      .addToUi();
+}
+
+
+function hola() {
+  var result = DocumentApp.getUi().alert(
+      'Hola',
+      '¿Es esto lo que buscabas?',
+      DocumentApp.getUi().ButtonSet.YES_NO);
+
+  if (result == DocumentApp.getUi().Button.YES) {
+    DocumentApp.getUi().alert('Pues ya lo has encontrado');
+  } else {
+    DocumentApp.getUi().alert('Pues adiós');
+  }
+}
+```

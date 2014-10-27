@@ -25,8 +25,8 @@
 
 ##Objetivos
 
-* [X] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux
-* [X] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+* [] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux
+* [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 * [X] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa. 
 * [X] Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
 
@@ -40,7 +40,7 @@
 
 ##Objetivos
 
-* [X] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+* [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 * [X] Comprender los niveles de virtualización y sus denominaciones genéricas. 
 * [X] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 
@@ -52,9 +52,43 @@
 * [X] Usar ficheros en el repositorio para los ejercicios.
 * [X] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
+#Clase-seminario del 7 de octubre de 2014
 
+##Objetivos
 
+* [X] Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
 
+##Otros objetivos
+
+* [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+* [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [X] Contestar a la encuesta sobre la metodología de clase
+
+#Clase del 13 de octubre de 2014
+
+##Objetivos
+
+* [X] Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+* [X] Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+
+##Otros objetivos
+
+* [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+* [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [X] Contestar a la encuesta sobre la metodología de clase
+
+#Clase del 14 de octubre de 2014
+
+##Objetivos
+
+* [X] Si todavía no se ha hecho, leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+* [X] Continuar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+
+##Otros objetivos
+
+* [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+* [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [X] Contestar a la encuesta sobre la metodología de clase
 
 
 
