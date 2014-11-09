@@ -81,9 +81,10 @@ rhc setup
 Para la automatizacion existen dos formas:  
 + _**Jenkins**_: Servidor con todas las funciones de integración continua (CI) que puede ejecutar, construir, testear y programar tareas que se integran con las aplicaciones de OpenShift.
 + _**Hot Deployment**_: Con hot deployment se aplican los cambios al código de la aplicación sin necesidad de reiniciar la aplicación, aumentando la velocidad de despliegue y minimizando el tiempo de inactividad de la aplicación.
-***
-####Ejercicio 7  
-######_Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente._  
+
+*** 
+#### Ejercicio 7  
+###### _Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente._  
 
 
 Para python he encontrado [Nose](http://pythontesting.net/framework/nose/nose-introduction/) es un framework para hacer test.
