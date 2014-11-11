@@ -1,17 +1,141 @@
+# Clase del 4 de noviembre de 2014
+
+## Objetivos de la clase
+    [X]Entender los objetivos de este tema
+    [X]Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+    []Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+    []Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+## Otros objetivos
+    []Usar herramientas de administración y monitorización de red en línea de órdenes
+    [X]Contestar a la encuesta sobre la asignatura
+    [X]Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o              tuitearlas con el hashtag #ivgii
+    []Dejar de usar Sublime Text por estas 7 razones.
+
+<hr />
+
+# Clase del 3 de noviembre de 2014
+
+## Objetivos de la clase
+    [X]Consolidar el uso de PaaS/SaaS
+    [X]Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+    [X]Continuar con la segunda práctica
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma,         mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del      repositorio, no al repositorio principal de la asignatura.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+<hr />
+
+# Clase del 28 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Consolidar el uso de PaaS/SaaS
+    [X]Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+    [X]Comenzar con la segunda práctica
+
+## Otros objetivos
+    [X]Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma,        mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del      repositorio, no al repositorio principal de la asignatura.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+
+<hr />
+
+# Clase del 27 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Consolidar el uso de PaaS/SaaS
+    [X]Entender los sistemas de automatización de la construcción de aplicaciones
+
+## Otros objetivos
+    [X]Último día de entrega de la primera práctica.
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma,         mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del      repositorio, no al repositorio principal de la asignatura.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+
+<hr />
+
+# Clase del 21 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+    [X]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+    [X]Crear nuevas funciones en un SaaS.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+    [X]Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+
+<hr />
+
+# Clase del 20 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
+    [X]Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
+    [X]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+## Otros objetivos
+    [X]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+    [X]Comprender el método de entrega de las prácticas de la asignatura.
+
+<hr />
+
+# Clase del 14 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Si todavía no se ha hecho, leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+    [X]Continuar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+
+<hr />
+
+# Clase del 13 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+    [X]Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+
+<hr />
+
+# Clase del 7 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase
+
+<hr />
+
+
 # Clase del 6 de octubre de 2014
 
 ## Objetivos de la clase
 
-    []Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
-    []Comprender los niveles de virtualización y sus denominaciones genéricas.
-    []Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
+    [X]Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+    [X]Comprender los niveles de virtualización y sus denominaciones genéricas.
+    [X]Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 
 ## Otros objetivos
     []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
-    []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-    []Contestar a la encuesta sobre la metodología de clase
-    []Usar ficheros en el repositorio para los ejercicios.
-    []Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase
+    [X]Usar ficheros en el repositorio para los ejercicios.
+    [X]Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
 <hr />
 

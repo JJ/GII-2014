@@ -91,6 +91,14 @@ git push origin master
 ```
 ***
 ####Ejercicio 7
+######_Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene._
+
+Podemos ver como está montado en:
+```sh
+/sys/fs/cgroups
+```
+[Terminal en directo](http://showterm.io/f64ec2630665eef11989a) para ver el contenido de la carpeta cgroups.
+####Ejercicio 8
 ######_Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado._
 
 He creado tres grupos: buenos, malos y regular, y les he asignado los procesos chrome, kate y bash respectivamente.
@@ -115,7 +123,7 @@ El navegador es el que más a consumido.
 
 
 ***
-####Ejercicio 9
+####Ejercicio 10
 
 ######_Comprobar si el procesador o procesadores instalados lo tienen. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?_
 
@@ -125,7 +133,7 @@ Comprobamos que la tecnologia que utiliza intel para la virtualización está ac
 
 ![Ejercicio9](capturas/Ejercicio9.png)  
 ***
-####Ejercicio 10
+####Ejercicio 11
 ######_Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok._
 
 

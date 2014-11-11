@@ -1,0 +1,3 @@
+#Automatización dentro del PaaS
+
+En nuestro caso no estamos usando un PaaS sino un IaaS que nos ofrece la posibilidad de tener máquinas virtuales ejecutando los servicios de nuestro sistema. Por eso no necesitamos ficheros de automatización en la construcción de la aplicación. Otra cosa es que usáramos el mismo Azure (en nuestro caso) para el desarrollo de apps móviles usando su infraestructura subyacente. En este caso si se necesatarían dichos ficheros para trabajar con ellas, aunque no es conocemos cuales serían concretamente.

@@ -1,5 +1,5 @@
-#INFRAESTRUCTURA VIRTUAL:
-##EJERCICIOS
+##INFRAESTRUCTURA VIRTUAL:
+###EJERCICIOS
 ###Tema 1: Introducción a la IV
 ###Tema 2: Técnicas de virtualización
 ###Tema 3: Usando contenedores

@@ -66,7 +66,19 @@
 * [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
 * [x] Crear nuevas funciones en un SaaS.
 
+<<<<<<< HEAD
 * [] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+=======
+* [x] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+
+
+##Objetivos de sesión 10
+
+* [x] Consolidar el uso de PaaS/SaaS
+* [x] Entender los sistemas de automatización de la construcción de aplicaciones
+
+* [x] Último día de entrega de la primera práctica.
+>>>>>>> cfce1f7c1263ed5039a042f60f8e4b2f6070927a
 
 
 

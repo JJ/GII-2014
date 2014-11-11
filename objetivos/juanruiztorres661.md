@@ -69,8 +69,8 @@ Objetivos de Juan Antonio Ruiz.
 
 ##Clase del 13 de octubre de 2014.##
 
-* [ ] Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
-* [ ] Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
+* [X] Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
+* [X] Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
 
 ###Otros objetivos.###
 
@@ -82,8 +82,8 @@ Objetivos de Juan Antonio Ruiz.
 
 ##Clase del 14 de octubre de 2014.##
 
-* [ ] Si todavía no se ha hecho, leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
-* [ ] Continuar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
+* [X] Si todavía no se ha hecho, leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
+* [X] Continuar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
 
 ###Otros objetivos.###
 

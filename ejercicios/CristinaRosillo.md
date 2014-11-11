@@ -38,4 +38,111 @@ Vamos a realizar comparaciones según el porcentaje de uso :
   - Servidor Dedicado: 2439,6€/año (203,3€ * 12, Pago fijo al mes).
   - Cloud Server: 402,96€/año (8760horas/año * 0.46€/h = 4029,6€ aproximadamente).
    
-    
+
+
+#Ejercicio 3
+
+- Parte 2:
+ 
+Se ha realizado un pequeño programa en python que suma dos valores introducidos por teclado.
+
+Una vez creado, hemos instalado el paquete CDE, con la siguiente instrucción:
+	> sudo apt-get install cde
+
+A continuación hemos dado permisos de ejecución (chmod +x suma.py) al programa.
+
+Por último hemos ejecutado una serie de comandos para realizar el empaquetado en CDE.
+Hemos realizado una copia del fichero suma.py en los siguientes directorios:
+	- /usr/games
+	- /usr/bin
+
+Una vez tenemos la copia en ese directorio ejecutamos:
+	> cde suma.py
+
+Se ejecutará y a continuación realizaremos un ls, para ver como se han creado en nuestro directorio una serie de ficheros y una carpeta. Accederemos a la carpeta "cde-packages" y ejecutaremos otro ls.
+
+Nos saldrán un listado de los archivos que se han creado al ejecutar la orden cde anterior.
+
+Comprobamos que ejecutando el fichero (./suma.py.cde) el programa se ejecuta correctamente.
+
+
+
+#Ejercicio 4
+
+Vamos a realizar el tutorial de docker que se encuentra en el siguiente enlace [*Tutorial*](https://www.docker.com/tryit/)
+
+![Ejercicio_4](http://i.imgur.com/1I2UHzW.png?1)
+
+
+
+#Ejercicio 5
+
+Para comenzar la instalación del sistemas de fuentes Git, lo primero que
+vamos a hacer es actualizar el listado de los paquetes.
+	
+	> sudo apt-get update
+
+A continuación instalaremos el paquete.
+	
+	> sudo apt-get install git
+	
+Por último vamos a realizar la configuración de algunos parámetros que
+servirán para identificarnos a la hora de realizar gestiones en nuestros
+repositorios. Primero configuraremos el nombre y a continuación el email.
+
+	> git config --global user.name "Cristina Rosillo"
+	> git config --global user.email "cristy.blk@gmail.com"
+	
+Si queremos comprobar el estado de todos estos valores, podemos ejecutar:
+	
+	> git config --list
+	
+![Ejercicio_5](http://i.imgur.com/O5S6Kiu.png)
+
+
+
+#Ejercicio 6
+
+Vamos a crear un proyecto nuevo y a descargarlo desde git, modificando al el fichero README desde linea de 
+comandos y actualizandolo.
+
+![Ejercicio_6_1](http://i.imgur.com/Wrq19vn.png)
+
+![Ejercicio_6_2](http://i.imgur.com/oMLMGms.png)
+
+![Ejercicio_6_3](http://i.imgur.com/mhvsWgI.png)
+
+![Ejercicio_6_4](http://i.imgur.com/5sCygPW.png)
+
+![Ejercicio_6_5](http://i.imgur.com/m5EWt99.png)
+
+
+#Ejercicio 7
+
+Para verificar si está montado, comprobaremos que el directorio /sys/fs/cgroup
+no esté vacío. Si lo está como en mi caso tendremos que montarlo ejecutando lo siguente:
+
+	>sudo mount -t cgroup cgroup /sys/fs/cgroup
+	
+Una vez hecho, haremos un ls para ver su contenido.
+
+![Ejercicio_7](http://i.imgur.com/945l6hG.png)
+
+
+
+#Ejercicio 10
+
+Si tiene instalados los flags, podemos comprobarlo ejecutando la siguiente orden:
+
+	> egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+
+El procesador del equipo es:
+
+![Ejercicio_10_1](http://i.imgur.com/YXYxnHg.png)
+
+La salida que produce la ejecución de la primera orden es la siguiente.
+
+![Ejercicio_10_2](http://i.imgur.com/W8XzkM3.png)
+
+
+
