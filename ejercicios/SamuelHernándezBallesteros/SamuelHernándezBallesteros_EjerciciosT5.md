@@ -174,8 +174,41 @@ Accedemos a la url indicada y descargamos un fichero, lo importamos con la orden
 
 	azure account import [fichero]
 
+Si todo va bien, tendremos nuestra cuenta enlazada.
+
 ###Ejercicio 9
 Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
+
+Para crear los contenedores tenemos que seguir los siguientes pasos:
+
+	azure storage account create samueliv
+    
+    azure storage account keys list samueliv
+
+Al final del fichero ".bashrc", insertarmos:
+
+	export AZURE_STORAGE_ACCOUNT=samueliv
+	export  AZURE_STORAGE_ACCESS_KEY=CLAVE
+
+Para poder acceder sin tener que exportar las variables de entorno cada vez que vayamos a hacer algo ejecutamos source .bashrc
+
+Ahora podemos crear los contenedores:
+
+    azure storage container create contenedor -p blob
+    azure storage container create contenedor1 -p blob
+    azure storage container create contenedor2 -p blob
+
+![EJ9-1](http://i57.tinypic.com/2la7dy0.jpg)
+
+![EJ9-2](http://i57.tinypic.com/2la7dy0.jpg)
+
+Subimos un fichero cualquiera
+
+azure storage blob upload T5Ejercicio9.png contenedor1 T5Ejercicio9.png
+
+Podemos ver la imagen subida en el siguiente enlace
+
+[Contenedor](https://samueliv.blob.core.windows.net/contenedor1/T5Ejercicio9.png)
 
 ###Ejercicio 10
 Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.

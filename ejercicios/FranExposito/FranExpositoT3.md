@@ -13,12 +13,12 @@ Despues montamos la imagen, para ello utilizaremos el siguiente comando:
 
 Y ya lo tenemos montado:
 
-![t31a](imagenes/t31a.png)
+![t2e1_a](imagenes/t3e1_a.png)
 > Muestra del comando mount.  
 
 ###Ejercicio 2.
 ######Apartado 1.
-![t32a](imagenes/t3e2_a.png)  
+![t3e2_a](imagenes/t3e2_a.png)  
 >Muestra de los puentes en mi máquina.  
 
 ######Apartado 2.
@@ -26,7 +26,7 @@ En primer lugar creamos el puente:
 
 	brctl addbr auxbridge  
 
-![t32b](imagenes/t3e2_b.png)
+![t3e2_b](imagenes/t3e2_b.png)
 > Creando el puente auxbridge.  
 
 Posteriormente, añadiremos wlan0 al puente con el siguiente comando:  
@@ -47,7 +47,7 @@ Creamos la nueva distro:
 
 	sudo debootstrap --arch=i386 saucy /home/franexp/saucy32/ http://archive.ubuntu.com/ubuntu  
 
-![t33a](imagenes/t3e3_a.png)
+![t3e3_a](imagenes/t3e3_a.png)
 >Creada correctamente.  
 
 ######Apartado 2.
@@ -59,7 +59,7 @@ Creamos una distro de Centos-6:
 
 	rinse --arch=i386 --distribution centos-6 --directory /home/franexp/centos6  
 
-![t33b](imagenes/t3e3_b.png)  
+![t3e3_b](imagenes/t3e3_b.png)  
 >Creada correctamente.
 
 ###Ejercicio 4.
@@ -74,7 +74,7 @@ Ahora toca instalar *python* para probar el típico Hola Mundo:
 
 Y probamos el *hola mundo*:  
 
-![t34a](imagenes/t3e4_a.png)  
+![t3e4_a](imagenes/t3e4_a.png)  
 >Probando el Hola Mundo.  
 
 
@@ -95,7 +95,7 @@ Finalmente comprobamos la página de inicio de *nginx*:
 
 	curl localhost  
 
-![t35a](imagenes/t3e5_a.png)  
+![t3e5_a](imagenes/t3e5_a.png)  
 >Mostrando la página web por defecto de nginx.
 
 

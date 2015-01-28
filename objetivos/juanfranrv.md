@@ -287,7 +287,50 @@ Lista de objetivos Juan Francisco Rodríguez Vílchez
 
 * [X] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
 
-###Objetivos generales###ss
+###Objetivos generales###
 
 * [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
 * [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+##Sesión 12-01-2015##
+
+* [X] Entender el concepto de provisionamiento de máquinas virtuales.
+* [X] Usar Chef para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+###Objetivos generales###
+
+* [X] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+##Sesión 13-01-2015##
+
+* [X] Entender el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+###Objetivos generales###
+
+* [X] Aprender a usar máquinas virtuales.
+* [X] Elegir un sistema de provisionamiento.
+* [X] Entender los objetivos del último proyecto (y de la asignatura).
+
+##Sesión 19-01-2015##
+
+* [X] Trabajar sobre el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+###Objetivos generales###
+
+* [X] Ponerse al día en los ejercicios de autoevaluación.
+
+##Sesión 20-01-2015##
+
+* [X] Trabajar sobre el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+###Objetivos generales###
+
+* [X] Ponerse al día en los ejercicios de autoevaluación.
+* [X] Recopilar recursos para plantear dudas antes de la entrega final.
+

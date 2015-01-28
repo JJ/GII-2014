@@ -185,6 +185,23 @@
 * [x] Conocer a empresas radicadas en Granada que usen la tecnología nube.
 * [x] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
 
+##Objetivos de sesión 26
+
+* [x] Entender el concepto de provisionamiento de máquinas virtuales.
+* [] Usar Chef para provisionamiento de una máquina virtual.
+* [x] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+* [x] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [x] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+##Objetivos de sesión 27
+
+* [x] Entender el último hito del proyecto.
+* [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+* [x] Aprender a usar máquinas virtuales.
+* [x] Elegir un sistema de provisionamiento.
+* [x] Entender los objetivos del último proyecto (y de la asignatura).
 
 
 

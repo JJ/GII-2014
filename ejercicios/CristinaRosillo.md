@@ -338,3 +338,161 @@ Ahora comprobaremos si nuestro sistema está preparado para éste tipo de tecnol
 	> lxc-checkconfig
 	
 ![Ejercicio_1_2](http://i.imgur.com/mMNus8Z.png)
+
+#Ejercicio 2
+
+Vamos a comprobar las interfaces que se han creado. En éste caso podemos ver que se han creado 2 interfaces, una correspondiente al contenedor que hemos creado y ejecutado (prefijo veth) y la otra a lxc. Si creáramos otro contenedor y lo arrancamos tendriamos una tercera interfaz identificada también con el sufijo veth.
+
+![Ejercicio_2](http://i.imgur.com/hQ00hte.png)
+
+#Ejercicio 3
+
+1) Vamos a ver como se crea y ejecuta un contenedor basado en debian (usaremos el que hemos creado para el ejercicio anterior)
+
+![Ejercicio_3_1](http://i.imgur.com/FaEXYjf.png)
+![Ejercicio_3_2](http://i.imgur.com/BAydSj0.png)
+
+2) A continuación vamos a crear otro contenedor con otra distribución, en éste caso vamos a instalar y arrancar un contenedor con centos, para hacerlo hemos seguido las siguientes [instrucciones](http://www.bonusbits.com/main/HowTo:Setup_CentOS_LXC_Container_on_Ubuntu), pues hemos tenido que descargar la plantilla de centos para poder hacerlo. Una vez descargada y con los permisos necesarios, procederemos a crear el contenedor como lo hemos hecho hasta ahora.
+
+![Ejercicio3_3](http://i.imgur.com/9McK4li.png)
+
+#Ejercicio 4
+
+1) Instalar lxc-webpanel para arrancar, parar y visualizar las maquinas virtuales que tenemos instalada. Ejecutamos la siguiente instrucción obtenida de éste [enlace](http://lxc-webpanel.github.io/install.html):
+
+	> wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash
+	
+![Ejercicio4_1](http://i.imgur.com/jnFd4sm.png)
+
+2) Desde el panel vamos a restringir los recursos que pueden usar como: CPUs que se pueden usar, cantidad de memoria, etc. Al entrar en el webpanel, pinchando en las maquinas podremos acceder a un panel de configuración de esa máquina, desde donde podremos modificar los parámetros de configuración como la ip, nombre del host, cantidad de memoria...
+	En nuestro ejemplo hemos bajado a 1500 MB la cantidad de memoria, hemos limitado el uso de CPUs a 0-2 para la máquina "nubecilla22"
+	
+![Ejercicio4_2](http://i.imgur.com/vhy28YX.png)
+
+#Ejercicio 6
+
+1) Para instalar juju seguiremos las instrucciones dadas en el guión, ejecutamos las siguientes instrucciones:
+	
+	> sudo add-apt-repository ppa:juju/stable
+	
+Como nuestra versión de Ubuntu supera la 12.04 debemos ejecutar:
+
+	> sudo apt-get install juju-local
+	
+![Ejercicio6_1](http://i.imgur.com/2NeWu1v.png)
+	
+	
+2) Hemos creado un táper local (para hacerlo hemos seguido todos los pasos explicados en el guión) y ahora le instalaremos MySQL.
+	
+![Ejercicio6_2_1](http://i.imgur.com/PnGZSjV.png)
+
+![Ejercicio6_2_2](http://i.imgur.com/RfqFnm3.png)
+
+#Ejercicio 7
+
+1) Vamos a destruir toda la configuración que hemos realizado anteriormente (quitar MySQL y destruir la configuración).
+	
+	> juju destroy-service mysql
+	> juju destroy-environment local
+	> juju status
+	
+![Ejercicio7_1](http://i.imgur.com/7xV0wfZ.png)
+
+2) Ahora volveremos a crear la máquina anterior, instalando mediawiki, mysql y creando un enlace entre ellos.
+
+	> juju bootstrap
+	> juju deploy mediawiki
+	> juju deploy mysql
+	> juju add-relation mediawiki:db mysql
+	> juju expose mediawiki
+	
+![Ejercicio7_2_1](http://i.imgur.com/aC2vWqR.png)
+![Ejercicio7_2_2](http://i.imgur.com/fbh2slL.png)
+
+3) Crear un script para reproducir la configuración en las máquinas que sean necesarias.
+
+	#!/bin/bash
+	
+	echo "Creando nueva maquina..."
+	
+	juju bootstrap
+	juju deploy mediawiki
+	juju deploy mysql
+	juju add-relation mediawiki:db mysql
+	juju expose mediawiki
+	
+	echo "Maquina creada :)"
+
+![Ejercicio7_3](http://i.imgur.com/V2hWMtE.png)
+
+#Ejercicio 8
+
+Instalar la librería libirt, usando como ayuda ésta [guía](https://help.ubuntu.com/12.04/serverguide/libvirt.html)
+
+Lo primero que vamos a hacer es comprobar si nuestra máquina es compatible, ejecutando el siguiente comando. La salida del mismo nos indicará si nuestro hardware soporta o no virtualización. En éste caso nuestro equipo si lo soporta.
+
+	> kvm-ok
+	
+Ahora procederemos a instalar la librería.
+	
+	> sudo apt-get install kvm libvirt-bin
+	
+Para comprobar que todo ha ido bien podemos comprobarlo accediendo al shell virsh que hemos visto en la sesión.
+
+![Ejercicio8_1](http://i.imgur.com/mumhSvs.png)
+	
+#Ejercicio 9
+
+Realizar la instalación de un contenedor usando virt-install. Para hacerlo seguimos utilizando la guía que se nos facilitó en el ejercicio anterior. Lo primero que haremos será instalar el paquete virtinst, virt-install forma parte del paquete virtinst, así que instalando éste ya dispondriamos de dicha librería.
+
+	> sudo apt-get install virtinst
+	
+A continuación vamos a instalar un sistema fedora, usando el ejemplo de la guía hemos realizado algunos cambios para
+personalizar la instalación (nombre de la máquina, cambiar .iso por url para descargar la imagen de fedora...)
+
+	> sudo virt-install -n fedoraPrueba -r 256 --disk path=/var/lib/libvirt/images/fedoraPrueba.img,bus=virtio,size=4 -l http://download.fedoraproject.org/pub/fedora/linux/releases/20/Fedora/x86_64/os/ --accelerate --network network=default,model=virtio --connect=qemu:///system --vnc --noautoconsole -v
+	
+Una vez instalada, comprobamos que todo ha ido bien y que se está ejecutando.
+
+![Ejercicio9_1](http://i.imgur.com/jdjalNK.png)
+
+#Ejercicio 10
+
+Ahora vamos a instalar docker, como ya lo teníamos instalado de prácticas anteriores lo desinstalamos y volveremos a instalarlo ejecutando:
+
+	> sudo apt-get update
+	> sudo apt-get install docker.io
+	
+![Ejercicio10_1](http://i.imgur.com/Eq6nhMv.png)
+
+#Ejercicio 11
+
+1)	Con docker ya instalado, vamos a instalar una imagen de Ubuntu y otra de CentOS.
+
+	> docker pull ubuntu
+	> docker pull centos
+	
+![Ejercicio11_1](http://i.imgur.com/HgsXOwl.png)
+
+![Ejercicio11_2](http://i.imgur.com/v7plLEP.png)
+
+#Ejercicio 12
+
+Vamos a crear un usuario e instalar nginx en uno de los contenedores que hemos creado anteriormente.
+Primero accederemos al contenedor Ubuntu y crearemos un nuevo usuario.
+
+	> sudo docker run -i -t ubuntu /bin/bash
+	
+![Ejercicio12_1](http://i.imgur.com/7xrAP6D.png)
+
+A continuación (dentro del contenedor) instalaremos nginx.
+
+	> sudo apt-get update
+	> sudo apt-get install nginx
+
+![Ejercicio12_2](http://i.imgur.com/skZAnI4.png)
+
+Como podemos ver, el servicio se está ejecutando lo que nos confirma que la instalación se ha realizado correctamente.
+
+
+## Tema 5

@@ -21,25 +21,25 @@ Ya podemos comenzar a utilizar el entorno de desarrollo.
 ###Ejercicio 2.
 He decidido crear una cuenta en Heroku:  
 
-![Heroku](imagenes/heroku.png)  
+![t2e2_a](imagenes/t2e2_a.png)  
 
 ###Ejercicio 3.
 En primer lugar nos registramos en [OpenShift](https://www.openshift.com/):  
 
-![OS1](imagenes/os1.png) 
+![t2e3_a](imagenes/t2e3_a.png)
 
 Tras el registro, debemos crear una nueva aplicación. En nuestor caso seleccionamos WordPress:  
 
-![OS2](imagenes/os2.png)
+![t2e3_b](imagenes/t2e3_b.png)
 
 Configuramos la aplicación:  
 
-![OS3](imagenes/os3.png)
+![t2e3_c](imagenes/t2e3_c.png)
 
 En el siguiente paso ya solo queda configurar la instalación de wordpress:  
 
-![OS4](imagenes/os4.png)  
-![OS5](imagenes/os5.png)  
+![t2e3_d](imagenes/t2e3_d.png)  
+![t2e3_d](imagenes/t2e3_d.png)  
 
 Y ya tenemos el sitio listo: [Wordpress for IV](https://wp-franexpiv.rhcloud.com/).
 
@@ -73,10 +73,10 @@ function createAndSendDocument() {
 
 Concedemos los permisos necesarios para ejecutar el script:  
 
-![G1](imagenes/g1.png)
+![t2e4_a](imagenes/t2e4_a.png)
 
 Y finalmente ejecutamos el script y vemos que recibimos un correo con el nuevo documento tal y como pone en nuestro código:  
-![G2](imagenes/g2.png)
+![t2e4_b](imagenes/t2e4_b.png)
 
 ###Ejercicio 5.
 En el caso de Python, que es el lenguaje que usaremos en nuestro PasS, existe un sistema de automatización llamado [Paver](http://paver.github.io/paver/).
