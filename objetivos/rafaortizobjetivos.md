@@ -55,11 +55,50 @@
 * [x] Entender y saber llevar a cabo la virtualización de dispositivos de red
 #Clase del 10 de noviembre de 2014
 * [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
-* [x] Aprender a ''enjaular'' usuarios.
+* [x] Aprender a 'enjaular' usuarios.
 #Clase del 11 de noviembre de 2014
-* [] Entender el concepto de contenedores
-* [] Configurar el sistema para poder crear y usar contenedores
-* [] Crear y usar contenedores
+* [x] Entender el concepto de contenedores
+* [x] Configurar el sistema para poder crear y usar contenedores
+* [x] Crear y usar contenedores
+#Clase del 17 de noviembre de 2014
+* [x] Entender los sistemas de orquestacion de maquinas virtuales.
+* [x] Usarlos en la practica para configurar maquinas virtuales con un fin determinado.
+* [x] Ver el papel de los tapers o containers como base de experimentacion y practicas de muchos d elos conceptos de virtualizacion.
+#Clase del 18 de noviembre de 2014
+* [] Entender los factores economicos en la instalacion y valor añadido en un centro de proceso de datos.
+* [] Conocer las tecnologias a nivel de hardware que se usan para los mismos.
+* [] Conocer las aplicaciones y programas que se usan.
+* [] Saber que tipo de habilidades y empleos se generan con este tipo de habilidades y empleos se generan con este tipo de instalaciones.
+* [] Familiarizarse con el tejido economico TIC en nuestro entorno local.
+* [] Conocer que tipo de perfil buscan estas empresas.
+#Clase del 24 de noviembre de 2014
+* [x] Resolver problemas con juju.
+* [x] Configuracion compleja de sistemas con el.
+* [x] Entender el concepto de hipervisor y trabajar con ellos.
+* [] Resumir lo mas interesante de la visitra a trevenque.
+* [] Aprender estrategias para resolucion de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien sepa.
+#Clase del 25 de noviembre de 2014
+* [x] Resolver problemas con juju.
+* [x] Entender como funciona docker y que implica.
+#Clase del 1 de diciembre de 2014
+* [] Resolver ultimos problemas con docker.
+* [] Comenzar con la tercera practica.
+#Clase del 2 de diciembre de 2014
+* [] Resolver problemas con docker.
+* [] Resolver dudas relacionadas con la tercera practica.
+#Clase del 9 de diciembre de 2014
+* [x] Terminar con la familizacion de ruby
+* [x] Recordar conceptos de almacenamiento fisico.
+* [x] Entender concepto de FUSE y usarlo en la practica.
+* [x] Crear y manipular formatos de provisionamiento delgado.
+#Clase del 11 de diciembre de 2014
+* [] Entender los diferentes tipo de sistemas de ficheros virtuales
+* [] Aprender a provisionar almacenamiento en la nube.
+* [] Comenzar a usar laaS de algun tipo, obteniendo una cuenta gratuita en Fi-ware, DigitalOcean o cualquier otro medio
+* [] Entender los pasos neesarios para montar una infraestructura virtual a partir de sus componentes
+#Clase de 15 de diciembre de 2014
+
+
 
 
 

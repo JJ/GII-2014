@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>File: Tema [RDoc Documentation]</title>
+
+  <link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet" />
+
+  <script src="../../js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+</head>
+
+<body class="file">
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../../1o.html">1o</a></li>
+        
+          <li class="file"><a href="../../LICENSE.html">LICENSE</a></li>
+        
+          <li class="file"><a href="../../TODO.html">TODO</a></li>
+        
+          <li class="file"><a href="../../ejercicios/DavidCastellonRodriguez/prueba.html">prueba</a></li>
+        
+          <li class="file"><a href="../../ejercicios/JesusNavarro/Tema.html">Tema</a></li>
+        
+          <li class="file"><a href="../../ejercicios/juanAFernandez/Tema1/mysql.html">mysql</a></li>
+        
+          <li class="file"><a href="../../ejercicios/juanruiztorres661/imagenes/R_txt.html">R.txt</a></li>
+        
+          <li class="file"><a href="../../objetivos/ObjetivoPlataMuñoz.html">ObjetivoPlataMuñoz</a></li>
+        
+          <li class="file"><a href="../../objetivos/Objetivos_CristinaRosillo.html">Objetivos_CristinaRosillo</a></li>
+        
+          <li class="file"><a href="../../test_txt.html">test.txt</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../Object.html">Object</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    
+<p>## Tema 3.</p>
+
+<p>**Ejercicio 1.** Crear un espacio de nombres y montar en él una imagen ISO
+de un CD de forma que no se pueda leer más que desde él. Pista: en
+ServerFault nos explican como hacerlo, usando el dispositivo loopback.</p>
+
+<p>En primer lugar vamos a ver como montar un espacio de nombres. Para ello es
+necesario ejecutar en nuestra terminal los siguientes comandos.</p>
+
+<p>“`sh sudo unshare -u /bin/bash hostname jesusIV hostname exit hostname “`
+Cuando ejecutamos el primer comando estamos creando un espacio de nombres
+UTS(Unix Time Sharing System), ejecutamos el segundo comando para ver como
+se ha creado el espacio de nombres con el nuevo nombre dado, y tercero
+verificamos que al salir al introducir el comando exit el espacio de
+nombres es el mismo que teniamos al principio, es decir antes de ejecutar
+la orden unshare -u /bin/bash.</p>
+
+<p>En esta captura de pantalla podemos ver el proceso descrito anteriormente.</p>
+
+<p>&lt;a href=“<a
+href="http://es.tinypic.com?ref=2mowcqd">es.tinypic.com?ref=2mowcqd</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i58.tinypic.com/2mowcqd.png" />” border=“0” alt=“Image and
+video hosting by TinyPic”&gt;&lt;/a&gt;</p>
+
+<p>Ahora vamos a proceder a realizar en apartado dos del ejecicio 1 montaje de
+una imagen ISO.</p>
+
+<p>Para ello es necesasario llevar a cabo los siguientes pasos: En primer
+lugar obtenemos la ISO a montar en mi caso he elegido
+ubuntu-12.04.3-server-i386.iso He creado un directorio /mount/disk para
+montar la imagen aqui y por último he ejecutado la orden en terminal mount
+-o loop ubuntu-12.04.3-server-i386.iso mount/disk</p>
+
+<p>En esta imagen podemos ver el proceso realizado:  &lt;a href=“<a
+href="http://es.tinypic.com?ref=lusxw">es.tinypic.com?ref=lusxw</a>”
+target=“_blank”&gt;&lt;img src=“<img src="http://i58.tinypic.com/lusxw.png"
+/>” border=“0” alt=“Image and video hosting by TinyPic”&gt;&lt;/a&gt;</p>
+
+<p>Aqui podemos ver la ISO ya montada en mi máquina. &lt;a href=“<a
+href="http://es.tinypic.com?ref=fyftat">es.tinypic.com?ref=fyftat</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i62.tinypic.com/fyftat.png" />” border=“0” alt=“Image and video
+hosting by TinyPic”&gt;&lt;/a&gt;</p>
+
+<p>**Ejercicio 2.**</p>
+<ol><li>
+<p>Mostrar los puentes configurados en el sistema operativo.</p>
+</li></ol>
+
+<p>Para poder usar el comando bcrlt addr nombrePuente es necesario instalar
+dicho paquete para ello ejecutamos el comando:</p>
+
+<p>“` sudo apt-get install bcrlt “`</p>
+
+<p>Para ver las interfaces de red utilizamos la siguiente orden:</p>
+
+<p>“` ip addr show “` &lt;a href=“<a
+href="http://es.tinypic.com?ref=314w6ki">es.tinypic.com?ref=314w6ki</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i57.tinypic.com/314w6ki.png" />” border=“0” alt=“Image and
+video hosting by TinyPic”&gt;&lt;/a&gt;</p>
+
+<p>Usamos el comando bcrl show para ver los puentes que tenemos disponibles.</p>
+
+<p>“` bcrlt show “` &lt;a href=“<a
+href="http://es.tinypic.com?ref=2hxobqc">es.tinypic.com?ref=2hxobqc</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i57.tinypic.com/2hxobqc.png" />” border=“0” alt=“Image and
+video hosting by TinyPic”&gt;&lt;/a&gt;</p>
+<ol><li>
+<p>Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se
+tiene, o del fijo, si no se tiene.</p>
+</li></ol>
+
+<p>Para crear un puente es necesario ejecutar la siguiente orden:</p>
+
+<p>“` bcrlt addbr puenteIV “` En la imagen podemos ver el puente: &lt;a
+href=“<a
+href="http://es.tinypic.com?ref=2hxobqc">es.tinypic.com?ref=2hxobqc</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i57.tinypic.com/2hxobqc.png" />” border=“0” alt=“Image and
+video hosting by TinyPic”&gt;&lt;/a&gt;</p>
+
+<p>Asignamos un interfaz de red mediante el comando:</p>
+
+<p>“` bcrlt addif puenteIV eth0 “` &lt;a href=“<a
+href="http://es.tinypic.com?ref=vgj3vn">es.tinypic.com?ref=vgj3vn</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i59.tinypic.com/vgj3vn.png" />” border=“0” alt=“Image and video
+hosting by TinyPic”&gt;&lt;/a&gt;</p>
+
+<p>**Ejercicio 3.**</p>
+<ol><li>
+<p>Usar debootstrap (o herramienta similar en otra distro) para crear un
+sistema mínimo que se pueda ejecutar más adelante.</p>
+</li></ol>
+
+<p>Instalamos debootstrap con el comando: “` sudo apt-get install debootstrap
+“`</p>
+
+<p>Ahora procedemos a la creación de la distribución para ello ejecutamos la
+siguiente orden: “` sudo debootstrap –arch=i386 saucy /home/jaulas/saucy32/
+<a href="http://archive.ubuntu.com/ubuntu">archive.ubuntu.com/ubuntu</a> “`</p>
+
+<p>&lt;a href=“<a
+href="http://es.tinypic.com?ref=16kap1j">es.tinypic.com?ref=16kap1j</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i58.tinypic.com/16kap1j.png" />” border=“0” alt=“Image and
+video hosting by TinyPic”&gt;&lt;/a&gt;</p>
+<ol><li>
+<p>Experimentar con la creación de un sistema Fedora dentro de Debian usando
+Rinse.</p>
+</li></ol>
+
+<p>Instalamos rinse.</p>
+
+<p>“` sudo apt-get install rinse “`</p>
+
+<p>Mostramos las distribuciones disponibles con el comando:</p>
+
+<p>“` /usr/sbin/rinse –list-distributions</p>
+
+<p>“` &lt;a href=“<a
+href="http://es.tinypic.com?ref=2vnqi44">es.tinypic.com?ref=2vnqi44</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i58.tinypic.com/2vnqi44.jpg" />” border=“0” alt=“Image and
+video hosting by TinyPic”&gt;&lt;/a&gt;</p>
+
+<p>Instalamos una distribución de fedora:</p>
+
+<p>“` sudo rinse –arch=amd64 –distribution fedora-core-10 –directory
+/home/jaulas/ “`</p>
+
+<p>&lt;a href=“<a
+href="http://es.tinypic.com?ref=2zs5pmo">es.tinypic.com?ref=2zs5pmo</a>”
+target=“_blank”&gt;&lt;img src=“<img
+src="http://i57.tinypic.com/2zs5pmo.png" />” border=“0” alt=“Image and
+video hosting by TinyPic”&gt;&lt;/a&gt;</p>
+
+<p>**Ejercicio 4.** Instalar alguna sistema debianita y configurarlo para su
+uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o
+instalar las herramientas necesarias para compilar una y ejecutarla.</p>
+
+<p>**Ejercicio 5.** Instalar una jaula chroot para ejecutar el servidor web de
+altas prestaciones nginx.</p>
+
+<p>**Ejercicio 6.** Crear una jaula y enjaular un usuario usando `jailkit`,
+que previamente se habrá tenido que instalar.</p>
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+</body>
+</html>
+
