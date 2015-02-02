@@ -344,4 +344,203 @@ Commits:
 
 Algunos commits no se han incluido por tener solo pequeñas modificaciones para corregir comportamientos del sistema o errores (que se iban intentando solucionar con otros commits precedentes) y que no suponen grandes aportes respecto a los aquí presentados. Además, se ha tratado de listar los contenidos que son solo de la asignatura
 
+-------------------------------------------------------------------------------------------------------------
 
+###IV Aerospace. Entrega de Práctica final.
+
+* [Repositorio IV_Aerospace](https://github.com/julioxus/iv-aerospace)
+
+* [Aplicación desplegada en Google App Engine](http://ugraerospaceprogram.appspot.com/)
+
+* [Aplicación desplegada en un IaaS (Koding)](http://ivaerospace.koding.io/) (Si la máquina se ha quedado ausente durante una hora, se apaga automáticamente)
+
+
+####Integrantes:
+
+
+####Juan Francisco Rodríguez Vílchez
+ 
+Ha participado en estos scripts de provisionamiento (enlace a los commits).
+ 
+* [Issue Provisionamiento](https://github.com/julioxus/iv-aerospace/issues/56)
+* [Issue Docker para ver todos los arreglos](https://github.com/julioxus/iv-aerospace/issues/69)
+    
+* [Arreglando Docker](https://github.com/julioxus/iv-aerospace/commit/e422b275cc4d01e7f11956f0c080615f73f8336d)
+* [Arreglos Docker](https://github.com/julioxus/iv-aerospace/commit/5b7d02f1817e45c7e70e6d042b83d0c9b504c58f)
+* [Mejorando Dockerfile](https://github.com/julioxus/iv-aerospace/commit/75400050584c8b83a44785754a7f0fa7586d46e4)
+* [Mejorando Dockerfile](https://github.com/julioxus/iv-aerospace/commit/15c5a59f38263b9b4d4c66d3254f1dbb4926a7dc)
+* [Dockerfile](https://github.com/julioxus/iv-aerospace/commit/4363fe973b263ea87030c5e252e750b38954278b)
+* [Demonio necesario para el provisionamiento y despliegue en Koding](https://github.com/julioxus/iv-aerospace/commit/4d5a2ec7bd548a472464e562b63e81095a4e1b97)
+     
+Ha participado en estos tests (o issues)
+ 
+* [Issue Test para ver los distintos arreglos](https://github.com/julioxus/iv-aerospace/issues/55)
+    
+* [Test](https://github.com/julioxus/iv-aerospace/commit/c1eb14beab405337b030dc9effb3458f04d07288)
+* [Test](https://github.com/julioxus/iv-aerospace/commit/a38e3aba564930c13d57c860f4f182787b347950)
+* [Test](https://github.com/julioxus/iv-aerospace/commit/7919d7736276242ba85c9d4446ad1f57ccaa6480)
+     
+Ha participado en esta integración continua y PaaS
+     
+* [Issue integración continua para ver los distintos arreglos](https://github.com/julioxus/iv-aerospace/issues/54)
+    
+* [Realización del script de Shippable](https://github.com/julioxus/iv-aerospace/commit/41b11e7293ec617242ab740eab1ed98cc4d4009e)
+
+Ha participado en esta configuración de despliegue automático.
+
+* [Issue Despliegue Koding](https://github.com/julioxus/iv-aerospace/issues/72)
+    
+* [Script de despliegue automático en Koding](https://github.com/julioxus/iv-aerospace/commit/a34a75f640b1e63fb92ed0d771ec35baea528a67)
+* [Script de despliegue automático en GAE](https://github.com/julioxus/iv-aerospace/commit/a6706785b77627be091f3f8036b7ac2d7c58d9e2)
+
+####Jose Antonio Plata Muñoz
+
+Ha participado en estos scripts de provisionamiento (enlace a los commits)
+
+* https://github.com/julioxus/iv-aerospace/commit/da3eb1d9f5b76c352b8ca770f2d28915fc640b75
+* https://github.com/julioxus/iv-aerospace/commit/d801f595564a3c7acfad7594f473eed2a005bb17
+* https://github.com/julioxus/iv-aerospace/commit/0aea9a410ac71dfa0fe393414ef549e2f87f7bc5
+* https://github.com/julioxus/iv-aerospace/commit/6acc847c569b15a0e49475674e3549be5cff58fd
+* https://github.com/julioxus/iv-aerospace/issues/69
+
+Ha participado en esta integración continua y PaaS
+
+* https://github.com/julioxus/iv-aerospace/issues/54
+
+Ha participado en esta configuración de despliegue automático.
+
+* https://github.com/julioxus/iv-aerospace/commit/9d1d360c2a612d3feaeeb4b493d47cce778a7328
+* https://github.com/julioxus/iv-aerospace/commit/c32d8c58a1a7c719a53e2caaeeb6735a36e1603f
+
+####Julio Martínez Martínez-Checa
+ 
+Ha participado en estos scripts de provisionamiento:
+ 
+* [Jaula](https://github.com/julioxus/iv-aerospace/commit/59449e67ef650df9795a7ae6494c94b2c348a38e)
+* [Jaula](https://github.com/julioxus/iv-aerospace/commit/34eed7bbb8fe4a082a8bd64bf4a5c9784f910ec9)
+* [Docker](https://github.com/julioxus/iv-aerospace/commit/6835b93ebd10ca5106f835a0c0906b1132b36839)
+* [Demonio](https://github.com/julioxus/iv-aerospace/commit/678d2ea3f41991460b7ab4db77251382eb28993f)
+* [Shippable/Koding/Ansible](https://github.com/julioxus/iv-aerospace/commit/0e5bbdcff2ee331b649fbbf8c5def31e378ff0f6)
+* [Ansible](https://github.com/julioxus/iv-aerospace/commit/d7590ffedc1fa8224859d82efc7c51bb7245ca14)
+
+* [Issue Docker](https://github.com/julioxus/iv-aerospace/issues/69)
+* [Issue pregunta](https://github.com/julioxus/iv-aerospace/issues/71)
+* [Issue scripts provisionamiento](https://github.com/julioxus/iv-aerospace/issues/58)
+     
+Ha participado en estos tests (o issues)
+ 
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/f57153240f6b62169445f645202d7e4a45943f4e)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/7423ecf0af66829263d4fd3e5a75facc6554b402)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/556c6f28d468ee4a7d251b656cef20c9cc71c541)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/8344169f9002840e9b789de0ebd4ef87020c9a1a)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/d381099be6e5e4c7a531db1f3a795388f1e89af3)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/21dae535cb645037fc03fcdbefe7798e29bdae93)
+
+* [Issue tests](https://github.com/julioxus/iv-aerospace/issues/55)
+     
+Ha participado en esta integración continua y PaaS
+
+* [Autenticación automática](https://github.com/julioxus/iv-aerospace/commit/67e3ad99298ecd8a321b9386211e48e87ff74992)
+* [Autenticación automática](https://github.com/julioxus/iv-aerospace/commit/0b2345745dbc65f300efec29bfab91803cafc088)
+
+
+* [Issue integración contínua](https://github.com/julioxus/iv-aerospace/issues/54)
+     
+
+Ha participado en esta configuración de despliegue automático.
+
+* [Koding](https://github.com/julioxus/iv-aerospace/commit/6eabc869193f0d66df333311d99ec5a8e1e83462)
+* [Shippable/Koding](https://github.com/julioxus/iv-aerospace/commit/3d1af3f104a1b743a328f325c08da111c5d5bb58)
+* [Shippable/Koding/Ansible](https://github.com/julioxus/iv-aerospace/commit/0e5bbdcff2ee331b649fbbf8c5def31e378ff0f6)
+* [Shippable/Koding](https://github.com/julioxus/iv-aerospace/commit/c35384ac5dfc14033a9aaac04d3cef6ad84b4142)
+* [Vagrant](https://github.com/julioxus/iv-aerospace/commit/b8b1c4fd884dabf5260930cbbf2d0d617c4f1d54)
+
+* [Issue Koding](https://github.com/julioxus/iv-aerospace/issues/72)
+* [Issue despliegue IaaS](https://github.com/julioxus/iv-aerospace/issues/56)
+
+####Cristina Rosillo Arenas
+
+Ha participado en estos scripts de provisionamiento: 
+
+* [Docker](https://github.com/julioxus/iv-aerospace/commit/90e7bd24db0c5f38d05dd4bcd36525d3edc976ce)
+* [Despliegue automático](https://github.com/julioxus/iv-aerospace/commit/49b4904a4df6a4ab71ba641b85fa6ce93a6ddf7b) ,issues: #67
+	
+Ha participado en estos tests: 
+			
+* [Test conexiones máximas](https://github.com/julioxus/iv-aerospace/blob/master/test/test-conex-simultaneas.py) ,issues: #55
+* [Test en shippable](https://github.com/julioxus/iv-aerospace/commit/4d789258e6b0c2a9c9e4db7ce1959b1ee3a7143e) ,issues: #55
+
+Ha participado en esta integración continua y PaaS:
+
+* [Base de Datos](https://github.com/julioxus/iv-aerospace/commit/a40612da0f12e140505d9ff49ed0b58fddff01bc) , issues: #51
+
+####Miguel Martinez Castellanos
+
+Ha participado en estos scripts de provisionamiento:
+
+* [Docker](https://github.com/julioxus/iv-aerospace/commit/245287d56062edc2af6a7b3ab2b9e2c4b54c3e15) (issue #69)
+* [Docker](https://github.com/julioxus/iv-aerospace/commit/b05ab41faa878d680e5f571709228c23bbb8b61b) (issue #69)
+
+Ha participado en esta integración continua y PaaS:
+
+* [Base de datos ndb](https://github.com/julioxus/iv-aerospace/commit/6871b7a8a3fbd26f45c3157cacf3f4b56bcede98) (issue #51)
+
+Ha participado en esta configuración de despliegue automático:
+
+* [Despliegue automático en Koding](https://github.com/julioxus/iv-aerospace/commit/f5e763025d58abc1dace375943d3cdaceb16540e) (issue #72)
+   
+####Óscar Sánchez Martínez
+ 
+Ha participado en estos scripts de provisionamiento:
+
+* [playbook de ansible](https://github.com/julioxus/iv-aerospace/commit/52333c0f60900d0d8c20f7f5a88e07dc5dda1072)
+* [script de docker](https://github.com/julioxus/iv-aerospace/commit/7565d8e23ea6a48605570eb60372ceadc2d489af)
+* [Issues Dockerfile](https://github.com/julioxus/iv-aerospace/issues/69)
+     
+Ha participado en estos tests (o issues):
+ 
+* [Documentación test navegación](https://github.com/julioxus/iv-aerospace/commit/6fe18d10ec691520f4164e1813aba01f68bd1a37)
+* [Test navegación automática](https://github.com/julioxus/iv-aerospace/commit/ee950e02b85072a5604aa3ef1f2d54eb13d7d6d6)
+* [Issues desarrollo de test](https://github.com/julioxus/iv-aerospace/issues/55)
+
+Ha participado en esta integración continua y PaaS:
+     
+* [Archivo de requerimientos para Shippable](https://github.com/julioxus/iv-aerospace/commit/b2e3b33045296431e6cdaa76977898711d76639f)
+* [Issues integración con travis](https://github.com/julioxus/iv-aerospace/issues/73)
+
+Ha participado en esta configuración de despliegue automático:
+
+* [Despliegue con vagrant - ficheros](https://github.com/julioxus/iv-aerospace/commit/388ce90dc887e6c68b0dbdd30288c33f3a644824)
+* [Despliegue con vagrant - correción](https://github.com/julioxus/iv-aerospace/commit/8841b91c69bb6f99d9203faffd4c54ddb446c38c)
+
+
+####Hans Manuel Grenner Noguerón
+ 
+Ha participado en estos scripts de provisionamiento:
+ 
+* [Script eliminar proceso del servidor, modificar install_dock](https://github.com/julioxus/iv-aerospace/commit/cc21f69d6d95645fa10ade6deb75fdf29020390f)
+* [**Docker**](https://github.com/julioxus/iv-aerospace/commit/6200c0eec098aca8a57b612e0bd2e3139a6708e9)
+
+* [**Issue Docker**](https://github.com/julioxus/iv-aerospace/issues/69)
+
+Ha participado en estos tests (o issues)
+ 
+* [**Test** para comprobar URL's de la aplicación](https://github.com/julioxus/iv-aerospace/commit/215004ef87472653cc0f5a84d5d3927c9e3e95bc)
+    
+* [**Issue Tests**](https://github.com/julioxus/iv-aerospace/issues/55)
+
+Ha participado en esta integración continua y PaaS
+     
+* [Integracion continua en **Travis**](https://github.com/julioxus/iv-aerospace/commit/3d3e29059269e28eea7009da0943b7092b73d395)
+    
+* [**Issue Travis**](https://github.com/julioxus/iv-aerospace/issues/73)
+
+Ha participado en esta configuración de despliegue automático.
+
+* [Creación del playbook de **Ansible**](https://github.com/julioxus/iv-aerospace/commit/75497d83bcb2b924ce444bf7090c479791498bf9)
+* [**Vagrant**](https://github.com/julioxus/iv-aerospace/commit/9e6e074d6d2269e9b1846f9f93c4c93d204c04fa)
+    
+* [**Issue Koding**](https://github.com/julioxus/iv-aerospace/issues/56)
+
+
+---------------------------------------------------------------------------------------------------------------------------------
