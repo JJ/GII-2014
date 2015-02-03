@@ -1,5 +1,6 @@
 #Entrega del proyecto de la asignatura.
 
+
 ###Transparente-Servidor-UGR. Entrega de Práctica final.
 
 - Enlace al **repositorio**: [repo de Github](https://github.com/TransparenciaUGR/Proyecto-IV).
@@ -652,3 +653,4 @@ IMPORTANTE: Koding en su versión gratuita se mantiene ejecutandose de forma con
 
 5. Buenas prácticas en los mensajes de commit y documentación del código: Aportación a la documentación del código [Issue 8](https://github.com/miguelfabre/Proyecto/issues/8) y buenas prácticas en los mensajes de commit [Issues](https://github.com/miguelfabre/Proyecto/issues)
 
+>>>>>>> 80b25c10e3ab578cc509d0ba841e3ac6c2f7e0e8
