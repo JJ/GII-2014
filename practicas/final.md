@@ -1030,3 +1030,54 @@ Ha participado en el desarrollo del proyecto
 
 
 --------------------------------------------------------------------------------
+
+
+###[Periodismo de Datos con Incho Cordero](https://github.com/javiergama8/Practica-Final)
+
++ [Aplicación funcionando](http://proyectoazure.cloudapp.net/)
+
++ [Readme](https://github.com/javiergama8/Practica-Final/blob/master/README.md)
+
+
+#####Integrantes del grupo:
+* Javier García Martínez
+* Leopoldo Castillo Maldonado
+* Jose Marcos Leyva Castro
+
+##Javier García Martínez
+
+@javiergama8
+
+Ha  participado en estos scripts de aprovisionamiento(enlace a los commits):
+
++ Script para Ansible: [playbook.yml](https://github.com/javiergama8/Practica-Final/commit/117e9ac01a703de9e6a5a522da44beaabd1960d1)
+
+Ha participado en el script de configuración Vagranfile: [Vagranfile](https://github.com/javiergama8/Practica-Final/commit/12afbdabbc491b8793fe91046beb86ce3248b3c0)
+
+Ha participado en la creación del fichero [ansible_host](https://github.com/javiergama8/Practica-Final/commit/04fc118afc2e351e7040bb85936b81981264e8e6) para Azure.
+
+Ha participado en los scripts de scrapeo de la web: [Script1](https://github.com/javiergama8/Practica-Final/commit/3e273fb7bd1fe5c2ad4e1f23cbc8dce561bac5b6) y [Script2](https://github.com/javiergama8/Practica-Final/commit/f8083c5bd0b8212e2b82ac9c769a22119ee9532a).
+
+Estudio, instalación, uso y configuración de herramientas Azure, Vagrant y Ansible.
+
+
+
+##Leopoldo Castillo Maldonado
+
+@leocm89
+
+Ha  participado en estos scripts de aprovisionamiento(enlace a los commits): 
+
++ Script para Ansible: [playbook.yml](https://github.com/javiergama8/Practica-Final/commit/751a7f23d4f09b01af31a8c70b980d31aeb2f513)
+
+Ha participado en aprovisionamiento y test en local: [test](https://github.com/javiergama8/Practica-Final/commit/baa6a6e271996546961e42e043ee8f08ea53f8c1)
+
+Ha participado en el script de configuración Vagranfile: [Vagranfile](https://github.com/javiergama8/Practica-Final/commit/936c0341278bc70446e0b1cc70ac7ca544c5385c)
+
+Ha participado en la creación del fichero [ansible_host](https://github.com/javiergama8/Practica-Final/commit/04fc118afc2e351e7040bb85936b81981264e8e6)
+
+Ha participado en el despliegue automático [playbook.yml](https://github.com/javiergama8/Practica-Final/commit/22a37473b49552bd9b65e9a492272a20bc434eb8) en Azure y [django](https://github.com/javiergama8/Practica-Final/commit/3665230f8e1717c0a84fd6d4b6d6c116b4ffb636)
+
+Ha participado en los scripts de scrapeo de la web: [Script3](https://github.com/javiergama8/Practica-Final/commit/ade38e893456cc50afa4ff6baa8daa8473103c49)
+
+Estudio, instalación, uso y configuración de herramientas Azure, Vagrant y Ansible.
