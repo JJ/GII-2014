@@ -146,14 +146,251 @@ Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
 ##Clase del 4 de Noviembre.
 #####Objetivos principales
 
-* [ ] Entender los objetivos de este tema.
-* [ ] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador.  
-* [ ] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux.  
-* [ ] Entender y saber llevar a cabo la virtualización de dispositivos de red.  
+* [x] Entender los objetivos de este tema.
+* [x] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador.  
+* [x] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux.  
+* [x] Entender y saber llevar a cabo la virtualización de dispositivos de red.  
 
 #####Otros objetivos
 
-* [ ] Usar herramientas de administración y monitorización de red en línea de órdenes.  
-* [ ] Contestar a la encuesta sobre la asignatura.  
+* [x] Usar herramientas de administración y monitorización de red en línea de órdenes.  
+* [x] Contestar a la encuesta sobre la asignatura.  
 * [ ] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.  
-* [ ] Dejar de usar Sublime Text.  
+* [x] Dejar de usar Sublime Text.  
+
+### Sesión 10 de noviembre de 2014
+** Objetivos principales **
+
+- [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+
+- [x] Aprender a ''enjaular'' usuarios.
+
+** Otros objetivos **
+
+- [x] Finalizar la entrega la segunda práctica.
+
+- [x] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
+
+- [x] Dejar de usar Sublime Text por estas 7 razones.
+
+- [x] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+
+- [x] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+
+- [x] Comprender que existe vida en los servidores web fuera del Apache.
+
+- [ ] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+
+- [ ] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
+
+### Sesión 11 de noviembre de2014
+** Objetivos principales **
+
+- [x] Entender el concepto de contenedores
+
+- [x] Configurar el sistema para poder crear y usar contenedores
+
+- [x] Crear y usar contenedores
+
+** Otros objetivos **
+
+- [x] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+
+- [x] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+
+### Sesión 17 de noviembre de 2014
+** Objetivos principales **
+
+- [x] Entender los sistemas de orquestación de máquinas virtuales.
+
+- [x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+** Otros objetivos **
+
+- [x] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+
+### Sesión 18 de noviembre de 2014
+** Objetivos principales **
+
+- [x] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+
+- [x] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+
+- [x] Conocer las aplicaciones y programas que se usan.
+
+- [x] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+** Otros objetivos **
+
+- [x] Familiarizarse con el tejido económico TIC en nuestro entorno local.
+
+- [x] Conocer qué tipo de perfil buscan estas empresas.
+
+### Sesión 24 de noviembre de 2014
+** Objetivos principales **
+
+- [x] Resolver problemas con juju.
+
+- [x] Configuración compleja de sistemas con él.
+
+- [x] Entender el concepto de hipervisor y trabajar con ellos.
+
+** Otros objetivos **
+
+- [ ] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+
+- [x] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+### Sesión 25 de noviembre de 2014
+** Objetivos principales **
+
+- [x] Resolver problemas con juju.
+
+- [x] Entender cómo funciona docker y qué implica.
+
+** Otros objetivos **
+
+- [x] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+- [ ] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+### Sesión 1 de diciembre de 2014
+** Objetivos principales **
+
+- [x] Resolver últimos problemas con docker.
+
+- [x] Comenzar con la tercera práctica.
+
+** Otros objetivos **
+
+- [ ] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+
+- [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+### Sesión 2 de diciembre de 2014
+** Objetivos principales **
+
+- [x] Resolver últimos problemas con docker.
+
+- [x] Resolver dudas relacionadas con la tercera práctica.
+
+** Otros objetivos **
+
+- [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+- [ ] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+### Sesión 9 de diciembre de 2014
+** Objetivos principales **
+
+- [x] Terminar la familiarización con Ruby
+
+- [x] Recordar conceptos de almacenamiento físico.
+
+- [x] Entender el concepto de FUSE y usarlo en la práctica.
+
+- [x] Crear y manipular formatos de provisionamiento delgado.
+
+** Otros objetivos **
+
+- [x] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+
+- [x] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+### Sesión 11 de diciembre de 2014
+** Objetivos principales **
+
+- [x] Entender diferentes tipos de sistemas de ficheros virtuales
+
+- [x] Aprender a provisionar almacenamiento en la nube.
+
+** Otros objetivos **
+
+- [x] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+
+- [x] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+### Sesión 15 de diciembre de 2014
+** Objetivos principales **
+
+- [x] Entender los diferentes componentes de la infraestructura como servicio.
+
+- [x] Aprender a usar máquinas virtuales, localmente y en la nube.
+
+- [x] Comprender las bases físicas de las infraestructuras virtuales.
+
+** Otros objetivos **
+
+- [x] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+
+- [x] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+
+- [x] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+### Sesión 16 de diciembre de 2014
+** Objetivos principales **
+
+- [x] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+** Otros objetivos **
+
+- [x] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+
+- [x] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+### Sesión 12 enero de 2015
+** Objetivos principales **
+
+- [x] Entender el concepto de provisionamiento de máquinas virtuales.
+
+- [x] Usar Chef para provisionamiento de una máquina virtual.
+
+- [x] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+** Otros objetivos **
+
+- [x] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+
+- [x] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+### Sesión 13 de enero de 2015
+** Objetivos principales **
+
+- [x] Entender el último hito del proyecto.
+
+- [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+- [x] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+** Otros objetivos **
+
+- [x] Aprender a usar máquinas virtuales.
+
+- [x] Elegir un sistema de provisionamiento.
+
+- [x] Entender los objetivos del último proyecto (y de la asignatura).
+
+### Sesión 19 de enero de 2015
+** Objetivos principales **
+
+- [x] Trabajar sobre el último hito del proyecto.
+
+- [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+** Otros objetivos **
+
+- [x] Ponerse al día en los ejercicios de autoevaluación.
+
+### Sesión 20 de enero de 2015
+** Objetivos principales **
+
+- [x] Trabajar sobre el último hito del proyecto.
+
+- [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+** Otros objetivos **
+
+- [x] Ponerse al día en los ejercicios de autoevaluación.
+
+- [x] Recopilar recursos para plantear dudas antes de
