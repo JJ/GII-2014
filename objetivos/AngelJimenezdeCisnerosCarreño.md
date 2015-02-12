@@ -241,3 +241,96 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 * [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 * [ ] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+***
+#Clase del 9 de diciembre de 2014
+##Objetivos de la asignatura
+
+- [x] Terminar la familiarización con Ruby
+
+- [x] Recordar conceptos de almacenamiento físico.
+
+- [x] Entender el concepto de FUSE y usarlo en la prática.
+
+- [x] Crear y manipular formatos de provisionamiento delgado.
+***
+#Clase del 11 de diciembre de 2014
+##Objetivos de la asignatura
+
+- [x] Entender diferentes tipos de sistemas de ficheros virtuales
+
+- [x] Aprender a provisionar almacenamiento en la nube.
+
+##Objetivos generales
+
+- [x]Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+
+- [x]Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+***
+#Clase del 15 de diciembre de 2014
+##Objetivos de la asignatura
+
+- [x] Entender los diferentes componentes de la infraestructura como servicio.
+- [x] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [x] Comprender las bases físicas de las infraestructuras virtuales.
+
+##Objetivos generales
+
+- [x] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+- [x] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+- [x] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+***
+##Clase del 16 de diciembre de 2014
+- [x] Seminario por parte de Ignacio Zafra, de la empresa The Cloud Gate, empresa granadina que comercializa una solución para despachos de abogados basados en Google App Engine
+
+##Objetivos de la asignatura
+
+- [x] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+***
+#Clase del 12 de enero de 2015
+##Objetivos de la asignatura
+
+- [x] Entender el concepto de provisionamiento de máquinas virtuales.
+- [x] Usar Chef para provisionamiento de una máquina virtual.
+- [x] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+ 
+#Objetivos generales
+
+- [x] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+- [x] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+***
+#Clase del 12 de enero de 2015
+##Objetivos de la asignatura
+- [x] Entender el último hito del proyecto.
+- [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+- [x] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+##Objetivos generales
+
+- [x] Aprender a usar máquinas virtuales.
+- [x] Elegir un sistema de provisionamiento.
+- [x] Entender los objetivos del último proyecto (y de la asignatura).
+***
+#Clase del 19 de enero de 2015
+##Objetivos de la asignatura
+
+- [x] Trabajar sobre el último hito del proyecto.
+- [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+##Objetivos generales
+
+- [x] Ponerse al día en los ejercicios de autoevaluación.
+***
+#Clase del 20 de enero de 2015
+##Objetivos de la asignatura
+- [x] Trabajar sobre el último hito del proyecto.
+- [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+##Objetivos generales
+
+- [x] Ponerse al día en los ejercicios de autoevaluación.
+- [ ] Recopilar recursos para plantear dudas antes de la entrega final.etivos
+
+- [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+- [x] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+***
