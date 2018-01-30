@@ -149,3 +149,92 @@ Le daremos permisos de ejecución con <code>chmod +x hola.py</code>
 Y ahora pasaremos a ejecutarlo con el comando <code>python hola.py</code>
 
 <img src="https://github.com/javiergama8/Images/blob/master/Tema3-24.png">
+
+#Ejercicio 5#
+##Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.##
+
+Lo primero que vamos a hacer es entrar en la jaula que habiamos creado anteriormente. Para ello, ejecutaremos lo siguiente:
+
+<code>chroot /home/jaulas/debian/</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-27.png">
+
+Una vez que estamos dentro de la jaula, vamos a proceder a instalar *nginx*, así que ejecutaremos lo siguiente:
+
+<code>apt-get install nginx</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-28.png">
+
+Cuando ya tengamos instalado *nginx*, lo que haremos será lanzar el servicio y comprobar su estado. Para ello, haremos uso de los siguientes comandos:
+
+<code>service nginx start</code>
+
+<code>service nginx status</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-29.png">
+
+Por último, para comprobar su funcionamiento utilizaremos la herramienta *curl*, así que procederemos a instalarla:
+
+<code>apt-get install curl</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-30.png">
+
+Y una vez que la tenemos instalada comprobamos ejecutando el siguiente comando:
+
+<code>curl localhost</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-31.png">
+
+#Ejercicio 6#
+##Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.##
+
+Lo primero que vamos a hacer es descargarmos *jailkit*. Para ello, vamos a ejecutar el siguiente comando:
+
+<code>wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-32.png">
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-33.png">
+
+En siguiente lugar, vamos a instalar los paquetes necesarios para *jailkit*. Ejecutaremos el siguiente comando:
+
+<code>sudo apt-get install build-essential autoconf automake libtool flex bison debhelper binutils-gold</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-34.png">
+
+Ahora vamos a proceder a extraer *jailkit*.
+
+<code>tar -xzvf jailkit-2.16.tar.gz </code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-35.png">
+
+Y ahora ejecutaremos lo siguiente:
+
+<code>cd jailkit-2.16/</code>
+<code>sudo ./configure && make && sudo make install</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-36.png">
+
+Procedemos a crear una nueva jaula:
+
+<code>sudo mkdir /home/jaulas/jailkit</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-37.png">
+
+Y ahora iniciamos la jaula con *jailkit*:
+
+<code>sudo jk_init -v -j /home/jaulas/jailkit jk_lsh basicshell netutils editors</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-38.png">
+
+Vamos a crear a un usuario y lo enjaulamos:
+
++ <code>sudo adduser userenjaulado</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-39.png">
+
++ <code>sudo jk_jailuser -m -j /home/jaulas/jailkit/ userenjaulado</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema3-40.png">
+
+Tras haber realizado todos estos pasos, ya tendremos nuestro usuario enjaulado usando *jailkit*.

@@ -25,7 +25,7 @@ Clase del 6 de Octubre.
 - [X]   Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 - [X]   Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.
 
-###Otros Objetivos
+####Otros objetivos###
 - [ ]   Revisar algún ejercicio de un compañero y sugerir cambios o mejoras.
 - [ ]   Contestar a la encuesta sobre la metodología de clase.
 - [X]   Usar ficheros en el repositorio para los ejercicios.
@@ -52,7 +52,7 @@ Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
 - [X]  Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
 - [X]  Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
-###Otros Objetivos
+###Otros objetivos###
 - [X]   Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 - [X]   Comprender el método de entrega de las prácticas de la asignatura.
 
@@ -62,7 +62,7 @@ Clase del 21 de octubre
 - [X]   Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
 - [X]   Crear nuevas funciones en un SaaS.
 
-##Otros objetivos
+###Otros objetivos###
 - [ ]   Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 - [X]   Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 - [X]   Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
@@ -71,12 +71,10 @@ Clase del 21 de octubre
 Clase del 27 de octubre
 ======================
 
-##Objetivos de esta sesión
-
 - [X]   Consolidar el uso de PaaS/SaaS
 - [ ]   Entender los sistemas de automatización de la construcción de aplicaciones
 
-##Otros objetivos
+####Otros objetivos###
 
 - [X]   Último día de entrega de la primera práctica.
 - [ ]   Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura.
@@ -85,19 +83,19 @@ Clase del 27 de octubre
 
 Clase del 28 de octubre
 ======================
-##Objetivos de esta sesión
 
 - [X]   Consolidar el uso de PaaS/SaaS
 - [ ]   Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
 - [ ]   Comenzar con [la segunda práctica](https://github.com/JJ/IV/blob/master/documentos/practicas/2.XaaS.md)
 
-##Otros objetivos
+###Otros objetivos###
 
 - [ ]   Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura.
 - [X]   Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 - [X]   Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 
-##Clase del 3 de noviembre de 2014##
+Clase del 3 de noviembre de 2014
+======================
 
 * [X] Consolidar el uso de PaaS/SaaS
 * [X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
@@ -108,7 +106,8 @@ Clase del 28 de octubre
 * [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
 * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
-##Clase del 4 de noviembre de 2014##
+Clase del 4 de noviembre de 2014
+======================
 
 * [X] Entender los objetivos de este tema
 * [X] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
@@ -122,7 +121,8 @@ Clase del 28 de octubre
 * [X] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
 * [X] Dejar de usar Sublime Text por estas 7 razones.
 
-##Clase del 10 de noviembre de 2014##
+Clase del 10 de noviembre de 2014
+======================
 
 * [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 * [X] Aprender a ''enjaular'' usuarios.
@@ -138,7 +138,8 @@ Clase del 28 de octubre
 * [X] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 * [X] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
 
-#Clase del 17 de noviembre de 2013
+Clase del 17 de noviembre de 2013
+======================
 
 * [X] Entender los sistemas de orquestación de máquinas virtuales.
 * [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
@@ -147,7 +148,8 @@ Clase del 28 de octubre
 
 * [X] Ver el papel de los *tápers* o *containers* como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
-#Clase del 18 de noviembre de 2013
+Clase del 18 de noviembre de 2013
+======================
 
 * [X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
 * [X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
@@ -170,3 +172,129 @@ local.
 
 * [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+Clase del 25 de noviembre de 2014
+======================
+
+* [X] Resolver problemas con juju.
+* [X] Entender cómo funciona docker y qué implica.
+
+###Otros objetivos###
+
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [X] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+Clase del 1 de Diciembre de 2014
+======================
+
+* [X] Resolver últimos problemas con docker.
+* [X] Comenzar con la tercera práctica.
+
+###Otros objetivos###
+
+* [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+Clase del 2 de Diciembre de 2014
+======================
+
+* [X] Resolver últimos problemas con docker.
+* [X] Resolver dudas relacionadas con la tercera práctica.
+
+###Otros objetivos###
+
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+Clase del 9 de Diciembre de 2014
+======================
+
+* [X]Terminar la familiarización con Ruby
+* [X]Recordar conceptos de almacenamiento físico.
+* [X]Entender el concepto de FUSE y usarlo en la práctica.
+* [X]Crear y manipular formatos de provisionamiento delgado.
+
+###Otros objetivos###
+
+* [X]Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [X]Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+Clase del 11 de Diciembre de 2014
+======================
+
+* [X]Entender diferentes tipos de sistemas de ficheros virtuales
+* [X]Aprender a provisionar almacenamiento en la nube.
+
+###Otros objetivos###
+
+* [X]Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [X]Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+Clase del 15 de Diciembre de 2014
+======================
+
+* [X]Entender los diferentes componentes de la infraestructura como servicio.
+* [X]Aprender a usar máquinas virtuales, localmente y en la nube.
+* [X]Comprender las bases físicas de las infraestructuras virtuales.
+
+###Otros objetivos###
+
+* [X]Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+* [X]Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [X]Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+Clase del 16 de Diciembre de 2014
+======================
+
+* [X]Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+###Otros objetivos###
+
+* [X]Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X]Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+Clase del 12 de Enero de 2014
+======================
+
+* [X]Entender el concepto de provisionamiento de máquinas virtuales.
+* [X]Usar Chef para provisionamiento de una máquina virtual.
+* [X]Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+###Otros objetivos###
+
+* [X]Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [X]Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+Clase del 13 de Enero de 2014
+======================
+
+* [X] Entender el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+###Otros objetivos###
+
+* [X] Aprender a usar máquinas virtuales.
+* [X] Elegir un sistema de provisionamiento.
+* [X] Entender los objetivos del último proyecto (y de la asignatura).
+
+Clase del 19 de Enero de 2014
+======================
+
+* [X] Trabajar sobre el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+###Otros objetivos###
+
+* [X] Ponerse al día en los ejercicios de autoevaluación.
+
+Clase del 20 de Enero de 2014
+======================
+
+* [X] Trabajar sobre el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+###Otros objetivos###
+
+* [X] Ponerse al día en los ejercicios de autoevaluación.
+* [X] Recopilar recursos para plantear dudas antes de la entrega final.

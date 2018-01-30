@@ -1,6 +1,10 @@
+# Jose Carlos Sánchez Hurtado
+
 # Ejercicios tema 1
 
 ## Ejercicio 1
+
+#### Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema. 
 
 El equipo que he elegido para calcular su amortización es el siguiente, y su página web se puede consultar pinchando <a href=http://www.dynos.es/servidor-hp-proliant-ml350e-g8-xeon-e5-2403-1.8-ghz-2gb-500gb-disco-duro-hdd-3.5-matrox-g200-887111422361__470065-695.html:>aquí</a>
 
@@ -30,6 +34,8 @@ Año 7 - 10% - 47.80<br><br>
 
 ## Ejercicio 2
 
+#### Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
+
 En este ejercicio, comparo los precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube.
 
 Para el servicio de cloud he elegido el Servidor cloud t2.medium de [Amazon EC2](http://aws.amazon.com/es/ec2/pricing/). Su precio es de 0,041€/hora.
@@ -49,10 +55,16 @@ Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se rea
 
 ## Ejercicio 3
 
+#### 1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
+
+#### 2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
 Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-59239961)
 
 
 ## Ejercicio 4
+
+#### Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 
 En la siguiente captura, muestro el final del tutorial despues de haberlo completado:
 
@@ -61,12 +73,18 @@ En la siguiente captura, muestro el final del tutorial despues de haberlo comple
 
 ## Ejercicio 5
 
+#### Instala el sistema de gestión de fuentes git.
+
 En la siguiente foto muestro como ya tengo instalado git, y en su versión mas reciente.
 
 ![](http://fotos.subefotos.com/af847187f58a79b87f61633d42991fcao.png)
 
 
 ## Ejercicio 6
+
+#### 1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+
+#### 2. Modificar el readme y subir el fichero modificado.
 
 Uso mi repositorio como proyecto para clonar:
 
@@ -89,12 +107,16 @@ git push origin master
 
 ## Ejercicio 7
 
+#### Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. 
+
 En mi máquina uso el ubuntu 14.04, por lo que ya tengo instalado el /sys/fs/cgroup. Lo compruebo mediante la terminal, y lo muestro en la siguiente captura:
 
 ![](http://fotos.subefotos.com/15000e15c18fced226b4251fea6a6cd7o.png)
 
 
 ## Ejercicio 10
+
+#### Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
 Para comprobarlo ejecuto el siguiente comando:
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo, cuya salida se muestra en la siguiente captura:
@@ -108,12 +130,16 @@ Para consultar el modelo del procesador accedemos a la información de /proc/cpu
 
 ## Ejercicio 11
 
+#### Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
 Previamente instalo cpu-checker, y una vez instalado, con el comando kvm-ok compruebo que el núcleo KVM está en mi máquina. En la siguiente captura se puede observar que efectivamente está instalado:
 
 ![](http://fotos.subefotos.com/4998074add857be744e96e033c769477o.png)
 
 
 ## Ejercicio 12
+
+#### Comentar diferentes soluciones de Software as a Service de uso habitual.
 
 De entre las muchas que he encontrado por internet, destaco las tres siguientes:
 

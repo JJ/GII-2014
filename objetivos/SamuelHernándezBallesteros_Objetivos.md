@@ -189,42 +189,69 @@ Clase del 25 de noviembre de 2014
 [X] Resolver dudas relacionadas con la tercera práctica.
 
 ## Clase del 9 de diciembre de 2014
-[] Crear y manipular formatos de provisionamiento delgado.
+[X] Crear y manipular formatos de provisionamiento delgado.
 
-[] Entender el concepto de FUSE y usarlo en la práctica.
+[X] Entender el concepto de FUSE y usarlo en la práctica.
 
-[] Recordar conceptos de almacenamiento físico.
+[X] Recordar conceptos de almacenamiento físico.
 
-[] Terminar la familiarización con Ruby
+[X] Terminar la familiarización con Ruby
 
-[] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+[X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
 
 [] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
 ## Clase del 11 de diciembre de 2014
-[] Entender diferentes tipos de sistemas de ficheros virtuales
+[X] Entender diferentes tipos de sistemas de ficheros virtuales
 
-[] Aprender a provisionar almacenamiento en la nube.
+[X] Aprender a provisionar almacenamiento en la nube.
 
-[] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+[X] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
 
-[] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+[X] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
 
 ## Clase del 15 de diciembre de 2014
-[] Entender los diferentes componentes de la infraestructura como servicio.
+[X] Entender los diferentes componentes de la infraestructura como servicio.
 
-[] Aprender a usar máquinas virtuales, localmente y en la nube.
+[X] Aprender a usar máquinas virtuales, localmente y en la nube.
 
-[] Comprender las bases físicas de las infraestructuras virtuales.
+[X] Comprender las bases físicas de las infraestructuras virtuales.
 
-[] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+[X] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
 
-[] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+[X] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
-###Clase del 16 de diciembre de 2014
-[] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+## Clase del 16 de diciembre de 2014
+[X] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
 
-[] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+[X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
 
-[] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+[X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+## Clase del 12 de enero de 2015
+
+[X] Entender el concepto de provisionamiento de máquinas virtuales.
+
+[X] Usar Chef para provisionamiento de una máquina virtual.
+
+[X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+[X] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+
+[X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+## Clase del 13 de enero de 2015
+
+[X] Entender el último hito del proyecto.
+
+[X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+[X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+[X] Aprender a usar máquinas virtuales.
+
+[X] Elegir un sistema de provisionamiento.
+
+[X] Entender los objetivos del último proyecto (y de la asignatura).
+
 

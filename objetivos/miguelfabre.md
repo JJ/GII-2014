@@ -280,4 +280,109 @@
 * [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 * [X] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
 
+##Clase del 9 de diciembre de 2014##
+
+##Objetivos de la asignatura
+
+* [X] Terminar la familiarización con Ruby
+* [X] Recordar conceptos de almacenamiento físico.
+* [X] Entender el concepto de FUSE y usarlo en la práctica.
+* [X] Crear y manipular formatos de provisionamiento delgado.
+
+##Objetivos generales
+
+* [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [X] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+
+#Clase del 11 de diciembre de 2014
+
+##Objetivos de la asignatura
+
+* [X] Entender diferentes tipos de sistemas de ficheros virtuales
+* [X] Aprender a provisionar almacenamiento en la nube.
+
+##Objetivos generales
+
+* [X] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [X] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+
+#Clase del 15 de diciembre de 2014
+
+##Objetivos de la asignatura
+
+* [X] Entender los diferentes componentes de la infraestructura como servicio.
+* [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [X] Comprender las bases físicas de las infraestructuras virtuales.
+
+##Objetivos generales
+
+* [X] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+* [X] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [X] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+
+#Clase del 16 de diciembre de 2014
+
+##Objetivos de la asignatura
+
+* [X]Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+##Objetivos generales
+
+* [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+
+#Clase del 12 de enero de 2015
+
+##Objetivos de la asignatura
+
+* [X] Entender el concepto de provisionamiento de máquinas virtuales.
+* [X] Usar Chef para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+##Objetivos generales
+
+* [X] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+
+#Clase del 16 de enero de 2015
+
+##Objetivos de la asignatura
+
+* [X] Entender el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+##Objetivos generales
+
+* [X] Aprender a usar máquinas virtuales.
+* [X] Elegir un sistema de provisionamiento.
+* [X] Entender los objetivos del último proyecto (y de la asignatura).
+
+#Clase del 19 de enero de 2015
+
+##Objetivos de la asignatura
+
+* [X] Trabajar sobre el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+##Objetivos generales
+
+* [X] Ponerse al día en los ejercicios de autoevaluación.
+
+#Clase del 20 de enero de 2015
+
+##Objetivos de la asignatura
+
+* [X] Trabajar sobre el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+##Objetivos generales
+
+* [X] Ponerse al día en los ejercicios de autoevaluación.
+* [X] Recopilar recursos para plantear dudas antes de la entrega final.
 

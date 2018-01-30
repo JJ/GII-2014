@@ -175,5 +175,35 @@ Clase del 9 de diciembre de 2014
 ====
 Objetivos a cubrir en la sesión
 ---
+- [ ] Terminar la familiarización con Ruby.
+- [x] Recordar conceptos de almacenamiento físico.
+- [x] Entender el concepto de FUSE y usarlo en la práctica.
+- [x] Crear y manipular formatos de provisionamiento delgado.
+
+Clase del 11 de diciembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Entender diferentes tipos de sistemas de ficheros virtuales
+- [x] Aprender a provisionar almacenamiento en la nube.
+
+Clase del 15 de diciembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Entender los diferentes componentes de la infraestructura como servicio.
+- [x] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [x] Comprender las bases físicas de las infraestructuras virtuales.
+
+Clase del 16 de diciembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [ ] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+Clase del 12 de enero de 2015
+====
+Objetivos a cubrir en la sesión
+---
 
 

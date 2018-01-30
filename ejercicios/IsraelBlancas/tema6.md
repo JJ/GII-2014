@@ -133,6 +133,23 @@ y al terminar de instalar, aquí tendremos nuestro Debian con LXDE
 
 ![Debian funcionando](http://fotos.subefotos.com/485d0ab0b322baa2c6afc835570e57e6o.jpg)
 
+Salimos de la máquina y la arrancamos ejecutando ``qemu-system-x86_64 -boot order=c -drive file=lxde.img,if=virtio -m 512M -name debian -vnc :1``. Se quedará en ejecución sin abrir ninguna ventana ni nada. En otro terminal, tendremos que ver, usando "ifconfig" la dirección de la interfaz a la que tenemos que conectarnos y nos conectamos mediante ``vinagre 192.168.122.1:5901``
+
+![Accediendo a la máquina virtual usando VNC](http://fotos.subefotos.com/bed45b852d969593edb70b5a0041c08eo.jpg)
+
+QUEMU no permite más conexión que la procedente desde Internet. Para habilitarla, deberemos añadir un nuevo parámetro cuando arranquemos la máquina (que servirá para redirigir un puerto de la máquina anfitriona a un puerto de la máquina virtual).
+
+``qemu-system-x86_64 -boot order=c -drive file=lxde.img,if=virtio -m 512M -name debian -redir tcp:4664::22``
+
+Una vez que hayamos iniciado la máquina virtual, instalamos en la misma SSH (como no he añadido mi usuario a "sudoers", ejecuto como root):
+
+``apt-get update && apt-get install ssh``
+
+y en la máquina anfitriona `` ssh -p 4664 iblancasa@localhost`` y, tras aceptar la clave y escribir la contraseña, nos habremos conectado.
+
+![Conexión SSH])(http://fotos.subefotos.com/ec1986af9189a4f491a95fc143b85fc2o.jpg)
+
+
 
 ***
 
@@ -169,3 +186,77 @@ Ahora solo falta crear el "endpoint". En una terminal local, ejecutamos ``azure 
 y ya podremos acceder a nuestra web
 
 ![NGINX funcionando en Azure](http://fotos.subefotos.com/4f7db804eb23fbe6b9087d8e6026d580o.jpg)
+
+
+
+***
+
+##Ejercicio 6##
+
+#####Usar juju para hacer el ejercicio anterior#####
+
+En primer lugar, es necesario crear  un certificado. Para ello, en terminal, escribimos:
+```bash
+openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
+openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
+chmod 600 azure.pem
+```
+
+Subimos el certificado a Azure (desde la interfaz web), en la pestaña "Certificados de administración", dentro de "Configuración"
+
+![Certificados](http://fotos.subefotos.com/562a41ad6e5f932f793b14ea231da175o.jpg)
+
+Ahora hay que editar el fichero "environments.yaml" (dentro de la carpeta /home/usuario/.juju)
+
+![environments.yaml](http://fotos.subefotos.com/26ffb0304826d4afb14092aa1cae9ae2o.jpg)
+
+Hay que editar varios parámetros (en la sección Azure):
++ Añadimos "availability-sets-enabled: false" (sin comillas)
++ "location" pasa a "West Europe"
++ "manage-suscription-id" lo tomamos de ``azure account list``
++ "management-certificate-path" es la ruta a nuestro ".pem", generado cuando hemos creado el certificado
++ "storage-account-name" ponemos el nombre de la cuenta de almacenamiento que vamos a usar (``azure storage account list``)
+
+Y ejecutamos los siguientes comandos:
+
+```bash
+sudo juju switch azure
+sudo juju bootstrap
+sudo juju deploy --to 0 juju-gui
+sudo juju expose juju-gui
+```
+
+![Tras el bootstrap](http://fotos.subefotos.com/92b657a40ea51fd8b73580e7b862a5a0o.jpg)
+
+Comprobamos si se ha realizado todo correctamente ejecutando ``sudo juju status``:
+
+![Estado](http://fotos.subefotos.com/3f082899afec6d4bbd7e8ed3d6c8fe13o.jpg)
+
+Accedemos a la dirección que se nos indica y encontraremos esta página
+
+![Juju Gui](http://fotos.subefotos.com/1e1fac6187174c1c1bfdc1c3c6c9754ao.jpg)
+
+En el texto de debajo del formulario, podemos ver en dónde esta la contraseña.
+
+Hay dos opciones para activar NGINX:
++ En el menú de la izquierda buscamos "nginx", lo seleccionamos y marcamos que sea expuesto. Se quedará en amarillo. Yo no he conseguido hacerlo así.
++ Mediante consola de comandos:
+
+```bash
+sudo juju deploy --to 0 cs:~hp-discover/trusty/nginx-4
+sudo expose nginx
+```
+
+y, después de esperar un poco, veremos que el estado es iniciado y en la interfaz también aparece
+
+![Consola](http://fotos.subefotos.com/0e0ce2a0aab65b19f887a56fb7a00ef9o.jpg)
+
+![GUI](http://fotos.subefotos.com/f1ed248bca9d3dd8e012f9d9ec6add06o.jpg)
+
+
+
+***
+
+##Ejercicio 7##
+
+#####Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.#####

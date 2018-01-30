@@ -16,7 +16,7 @@ Una vez que he instalado compruebo si mi máquina es compatible y si se encuentr
 ```bash
 lxc-checkconfig
 ```
-![EJ1_1.png](./capturas/t4/EJ1_1.png)
+![EJ1_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ1_1.png)
 
 Como esta todo **enabled** esto indica que puedo usarlo.
 
@@ -53,7 +53,7 @@ Tras esto ya si podre crear el contenedor:
 ```bash
 sudo lxc-create -t fedora -n una-caja
 ```
-![EJ2_1.png](./capturas/t4/EJ2_1.png)
+![EJ2_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ2_1.png)
 Espero a que termine y paso a iniciarla:
 ```bash
 sudo lxc-start -n una-caja
@@ -89,7 +89,7 @@ sudo lxc-start -n una-caja
 ```
 
 Para los comando basicos de **lxc* he usado [linuxcontainers.org](https://linuxcontainers.org/lxc/manpages/)
-![EJ2_2.png](./capturas/t4/EJ2_2.png)
+![EJ2_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ2_2.png)
 
 Tras todo esto paso a indicar las interfaces que se han creado:
 
@@ -108,14 +108,14 @@ Para crear el contenedor Debian y ejecutarlo:
 sudo lxc-create -t debian -n debian
 sudo lxc-start -n debian
 ```
-![EJ3_1.png](./capturas/t4/EJ3_1.png)
+![EJ3_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ3_1.png)
 
 Para crear el contenedor CentOs y ejecutarlo:
 ```bash
 sudo lxc-create -t centos -n centos
 sudo lxc-start -n centos
 ```
-![EJ3_2.png](./capturas/t4/EJ3_2.png)
+![EJ3_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ3_2.png)
 
 
 Ejercicio 4
@@ -129,9 +129,9 @@ Para la instalación de LXC Web Panel uso el manual de la pagina del [proyecto](
 wget http://lxc-webpanel.github.com/tools/install.sh -O - | bash
 ```
 Tras instalarlo, accedo a http://localhost:5000 con usuario admin y contraseña admin.
-![EJ4_1.png](./capturas/t4/EJ4_1.png)
+![EJ4_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ4_1.png)
 Para cambiar los recursos de cada contenedor es muy facil, tan solo pinchando encima del nombre nos mostrará las opciones.
-![EJ4_2.png](./capturas/t4/EJ4_2.png)
+![EJ4_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ4_2.png)
 
 
 Ejercicio 6
@@ -144,16 +144,16 @@ Añado repositorio de juju y lo instalo tal cual lo indica el temario de la asig
 sudo add-apt-repository ppa:juju/stable
 sudo apt-get update && sudo apt-get install juju-core
 ```
-![EJ6_1.png](./capturas/t4/EJ6_1.png)
+![EJ6_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ6_1.png)
 
 **Usándolo, instalar MySQL en un táper.**
 Para empezar a trabajar con el:
 ```bash
 juju init
 ```
-![EJ6_2.png](./capturas/t4/EJ6_2.png)
+![EJ6_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ6_2.png)
 Tras esto voy a editar el fichero de configuracion de juju para su uso en local, cambio #default: amazon por default: local
-![EJ6_3.png](./capturas/t4/EJ6_3.png)
+![EJ6_3.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ6_3.png)
 
 Como se indica en el temario, se necesita instalar mongodb-server para usar juju en local, por lo tanto lo instalo.
 
@@ -166,19 +166,19 @@ Ahora establezco donde voy a trabajar:
 sudo juju switch local
 ```
 Según se indica, juju usa taper que cree el, por tanto vamos a crear uno.
-![EJ6_4.png](./capturas/t4/EJ6_4.png)
+![EJ6_4.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ6_4.png)
 
 Para instalar mysql usaré:
 ```bash
 sudo juju deploy mysql
 ```
-![EJ6_5.png](./capturas/t4/EJ6_5.png)
+![EJ6_5.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ6_5.png)
 Ahora para comprobar que se ha instalado correctamente, uso el comando:
 ```bash
 sudo juju status
 ```
 Que muestra el servicio mysql instalado.
-![EJ6_6.png](./capturas/t4/EJ6_6.png)
+![EJ6_6.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ6_6.png)
 
 
 Ejercicio 7
@@ -197,7 +197,7 @@ Para comprobar que se ha realizado todo correctamente:
 ```bash
 sudo juju status
 ```
-![EJ7_1.png](./capturas/t4/EJ7_1.png)
+![EJ7_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ7_1.png)
 
 
 **Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
@@ -245,7 +245,7 @@ Ejercicio 8
 ```bash
 sudo yum install libvirt
 ```
-![EJ8_1.png](./capturas/t4/EJ8_1.png)
+![EJ8_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ8_1.png)
 
 
 Ejercicio 10
@@ -259,7 +259,7 @@ sudo yum install docker-io
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
-![EJ10_1.png](./capturas/t4/EJ10_1.png)
+![EJ10_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ10_1.png)
 
 
 Ejercicio 11
@@ -273,19 +273,19 @@ Para instalar una imagen de ubuntu:
 ```bash
 sudo docker pull ubuntu
 ```
-![EJ11_1.png](./capturas/t4/EJ11_1.png)
+![EJ11_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ11_1.png)
 
 Para instalar una imagen de centOS:
 ```bash
 sudo docker pull centOS
 ```
-![EJ11_2.png](./capturas/t4/EJ11_2.png)
+![EJ11_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ11_2.png)
 
 Para instalar una imagen que incluya MongoDB, uso el nombre del paquete que me indica el siguiente [enlace](https://registry.hub.docker.com/u/dockerfile/mongodb/).
 ```bash
 sudo docker pull dockerfile/mongodb
 ```
-![EJ11_3.png](./capturas/t4/EJ11_3.png)
+![EJ11_3.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ11_3.png)
 
 
 Ejercicio 12
@@ -304,7 +304,7 @@ adduser nginx sudo
 # Login con el usuario nginx
 login nginx
 ```
-![EJ12_1.png](./capturas/t4/EJ12_1.png)
+![EJ12_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ12_1.png)
 Instalo nginx:
 ```bash
 sudo apt-get install nginx
@@ -320,7 +320,7 @@ Uso para ver el contenedor que tengo encendido:
 ```bash
 sudo docker ps --no-trunc
 ```
-![EJ13_1.png](./capturas/t4/EJ13_1.png)
+![EJ13_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ13_1.png)
 
 Tras esto, hago el commit del contenedor con su id.
 ```bash
@@ -330,7 +330,7 @@ Compruebo si se a creado la imagen de docker con:
 ```bash
 sudo docker images 
 ```
-![EJ13_2.png](./capturas/t4/EJ13_2.png)
+![EJ13_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t4/EJ13_2.png)
 
 
 Ejercicio 14

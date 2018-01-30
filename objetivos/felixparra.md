@@ -1,4 +1,54 @@
-# Clase del 16 de diciembre e de 2014
+# Clase del 20 de enero de 2015
+
+## Objetivos de la clase
+    [X]Trabajar sobre el último hito del proyecto.
+    [X]Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+## Otros objetivos
+    [X]Ponerse al día en los ejercicios de autoevaluación.
+    [X]Recopilar recursos para plantear dudas antes de la entrega final.
+    
+<hr />
+
+# Clase del 19 de enero de 2015
+
+## Objetivos de la clase
+    [X]Trabajar sobre el último hito del proyecto.
+    [X]Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+## Otros objetivos
+    [X]Ponerse al día en los ejercicios de autoevaluación.
+    
+<hr />
+
+# Clase del 13 de enero de 2015
+
+## Objetivos de la clase
+    [X]Entender el último hito del proyecto.
+    [X]Usar diversas herramientas para provisionamiento de una máquina virtual.
+    [X]Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+## Otros objetivos
+    [X]Aprender a usar máquinas virtuales.
+    [X]Elegir un sistema de provisionamiento.
+    [X]Entender los objetivos del último proyecto (y de la asignatura).
+    
+<hr />
+
+# Clase del 12 de enero de 2015
+
+## Objetivos de la clase
+    [X]Entender el concepto de provisionamiento de máquinas virtuales.
+    [X]Usar Chef para provisionamiento de una máquina virtual.
+    [X]Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+## Otros objetivos
+    [X]Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+    [X]Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+    
+<hr />
+
+# Clase del 16 de diciembre de 2014
 
 ## Objetivos de la clase
     [X]Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
@@ -9,7 +59,7 @@
     
 <hr />
 
-# Clase del 15 de diciembre e de 2014
+# Clase del 15 de diciembre de 2014
 
 ## Objetivos de la clase
     [X]Entender los diferentes componentes de la infraestructura como servicio.
@@ -23,7 +73,7 @@
     
 <hr />
 
-# Clase del 11 de diciembre e de 2014
+# Clase del 11 de diciembre de 2014
 
 ## Objetivos de la clase
     [X]Entender diferentes tipos de sistemas de ficheros virtuales
@@ -35,7 +85,7 @@
     
 <hr />
 
-# Clase del 9 de diciembre e de 2014
+# Clase del 9 de diciembre de 2014
 
 ## Objetivos de la clase
     [X]Terminar la familiarización con Ruby
@@ -49,7 +99,7 @@
     
 <hr />
 
-# Clase del 2 de diciembre e de 2014
+# Clase del 2 de diciembre de 2014
 
 ## Objetivos de la clase
     [X]Resolver últimos problemas con docker.
@@ -61,7 +111,7 @@
     
 <hr />
 
-# Clase del 1 de diciembre e de 2014
+# Clase del 1 de diciembre de 2014
 
 ## Objetivos de la clase
     [X]Resolver últimos problemas con docker.

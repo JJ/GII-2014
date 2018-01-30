@@ -128,15 +128,15 @@ Comenzar con la segunda práctica
 
 * [] Usar herramientas de administración y monitorización de red en línea de órdenes
 * [X] Contestar a la encuesta sobre la asignatura
-* [] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
-* []  de usar Sublime Text por estas 7 razones.
+* [x] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+* [x]  de usar Sublime Text por estas 7 razones.
 * 
 ## Clase del 10 de noviembre de 2014
 
 ### Objetivos de esta sesión
 
 * [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
-* [] Aprender a ''enjaular'' usuarios.
+* [x] Aprender a ''enjaular'' usuarios.
 
 ### Otros objetivos
 
@@ -196,14 +196,14 @@ Aprender a ''enjaular'' usuarios.
 ## Clase del 24 de noviembre de 2014
 ### Objetivos de esta sesión
 
-* [] Resolver problemas con juju.
-* [] Configuración compleja de sistemas con él.
-* [] Entender el concepto de hipervisor y trabajar con ellos.
+* [x] Resolver problemas con juju.
+* [x] Configuración compleja de sistemas con él.
+* [x] Entender el concepto de hipervisor y trabajar con ellos.
 
 ### Otros objetivos
 
-* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [x] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [x] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 ##Clase del 25 de noviembre de 2014
 
@@ -213,19 +213,19 @@ El viernes, hackatón y charla sobre la W3C
 
 ### Objetivos de esta sesión
 
-* [] Resolver problemas con juju.
-* [] Entender cómo funciona docker y qué implica.
-* [] Otros objetivos
+* [x] Resolver problemas con juju.
+* [x] Entender cómo funciona docker y qué implica.
+* [x] Otros objetivos
 
-* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [x] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 * [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
 
 ## Clase del 1 de diciembre de 2014
 ### Objetivos de esta sesión
 
-* [] Resolver últimos problemas con docker.
-* [] Comenzar con la tercera práctica.
-* [] Otros objetivos
+* [x] Resolver últimos problemas con docker.
+* [x] Comenzar con la tercera práctica.
+* [x] Otros objetivos
 
 Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
@@ -233,18 +233,18 @@ Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 ## Clase del 2 de diciembre de 2014
 ###Objetivos de esta sesión
 
-* [] Resolver últimos problemas con docker.
-* [] Resolver dudas relacionadas con la tercera práctica.
-* [] Otros objetivos
+* [x] Resolver últimos problemas con docker.
+* [x] Resolver dudas relacionadas con la tercera práctica.
+* [x] Otros objetivos
 
 ## Clase del 9 de diciembre de 2014
 
 ###Objetivos de la asignatura
 
-* [] Terminar la familiarización con Ruby
-* [] Recordar conceptos de almacenamiento físico.
-* [] Entender el concepto de FUSE y usarlo en la práctica.
-* [] Crear y manipular formatos de provisionamiento delgado.
+* [x] Terminar la familiarización con Ruby
+* [x] Recordar conceptos de almacenamiento físico.
+* [x] Entender el concepto de FUSE y usarlo en la práctica.
+* [x] Crear y manipular formatos de provisionamiento delgado.
 
 ###Objetivos generales
 
@@ -255,10 +255,97 @@ Usar herramientas de la asignatura para tareas de utilidad en la administración
 ##Clase del 11 de diciembre de 2014
 ###Objetivos de la asignatura
 
-* [] Entender diferentes tipos de sistemas de ficheros virtuales
-* [] Aprender a provisionar almacenamiento en la nube.
-* [] Objetivos generales
+* [x] Entender diferentes tipos de sistemas de ficheros virtuales
+* [x] Aprender a provisionar almacenamiento en la nube.
+* [x] Objetivos generales
 
 Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
 
 Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+
+##Clase del 15 de diciembre de 2014
+
+###Objetivos de la asignatura
+
+* [x] Entender los diferentes componentes de la infraestructura como servicio.
+* [x] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [x] Comprender las bases físicas de las infraestructuras virtuales.
+* [x] Objetivos generales
+
+Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+
+Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+
+Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+##Clase del 16 de diciembre de 2014
+
+Seminario por parte de Ignacio Zafra, de la empresa The Cloud Gate, empresa granadina que comercializa una solución para despachos de abogados basados en Google App Engine
+
+###Objetivos de la asignatura
+
+* [x] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+Objetivos generales
+
+* [x]Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [x] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+
+##Clase del 12 de enero de 2015
+
+###Objetivos de la asignatura
+
+* [x] Entender el concepto de provisionamiento de máquinas virtuales.
+* [x] Usar Chef para provisionamiento de una máquina virtual.
+* [x] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+ 
+### Objetivos generales
+
+* [x] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+
+* [x] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+
+##Clase del 12 de enero de 2015
+
+###Objetivos de la asignatura
+
+* [x] Entender el último hito del proyecto.
+
+* [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [x] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+Objetivos generales
+
+* [x] Aprender a usar máquinas virtuales.
+
+* [x] Elegir un sistema de provisionamiento.
+
+* [x] Entender los objetivos del último proyecto (y de la asignatura).
+
+##Clase del 19 de enero de 2015
+
+##Objetivos de la asignatura
+
+* [x] Trabajar sobre el último hito del proyecto.
+
+* [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+Objetivos generales
+
+* [x] Ponerse al día en los ejercicios de autoevaluación.
+
+##Clase del 20 de enero de 2015
+
+###Objetivos de la asignatura
+
+* [x] Trabajar sobre el último hito del proyecto.
+
+* [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+Objetivos generales
+
+* [x] Ponerse al día en los ejercicios de autoevaluación.
+
+* [x] Recopilar recursos para plantear dudas antes de la entrega final.

@@ -20,13 +20,13 @@ En primer lugar ejecutamos el siguiente comando:
 
     sudo lxc-create -t debian -n debiancont  
 
-![imagen1](imagenes/t4e2_a.png)  
+![t4e2_a](imagenes/t4e2_a.png)  
 
 Para ejecutar:  
 
   sudo lxc-start -n debiancont  
 
-![imagen2](imagenes/t4e2_b.png)  
+![t4e2_b](imagenes/t4e2_b.png)  
 
 ######Apartado 2.
 Instalado utilizando el script proporcionado en la github por [Gentoo](https://github.com/globalcitizen/lxc-gentoo/blob/master/lxc-gentoo).  
@@ -36,13 +36,13 @@ Para instalar **lxc-panel** utilizaremos el comando proporcionado desde la [web 
 
   wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash  
 
-![imagen3](imagenes/t4e4_a.png)
+![t4e4_a](imagenes/t4e4_a.png)
 
-![imagen4](imagenes/t4e4_b.png)  
+![t4e4_b](imagenes/t4e4_b.png)  
 
 Para restringir los recursos debemos seleccionar el container deseado y modificar los parametros según nuestras necesidades:  
 
-![imagen5](imagenes/t4e4_c.png)  
+![t4e4_c](imagenes/t4e4_c.png)  
 
 
 ###Ejercicio 5.
@@ -106,7 +106,7 @@ docker pull centos
 docker run -t -i centos /bin/bash
 ```
 
-Para instalar una imagen con mongoDB:    
+Para instalar una imagen con mongoDB:
 
 ```
 docker pull mongo

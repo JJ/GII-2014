@@ -357,31 +357,103 @@ Y a continuacion instalar:<br />
 
 **Ejercicio 1:**<br />
 ######1.1 - ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?<br />
+![ej5_1](https://raw.githubusercontent.com/felixparra/Imagenes/master/ej1.png)
 
 ######1.2 - Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?<br />
+No dispongo de acceso a un ordenador de la escuela.
 
 ######1.3 -Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.<br />
 
 **Ejercicio 2:**<br />
 **Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.**<br />
++ Instalar sshfs en el anfitrion: sudo apt-get install sshfs
++ Instalar sshfs en la maquina virtual
++ En el anfitrion añadimos al grupo fuse el usuario que utilizaremos para conectarnos a la maquina virtual: sudo usermod -a -G fuse user_fuse
++ Creamos en la maquina virtual una carpeta que nos permita realizar comprobaciones del correcto funcionamiento y observamos la IP del equipo virtual para conectarnos posteriormente
++ Nos conectamos desde el anfitrion: sshfs user_fuse@10.0.1.2:/home/carpetaComprobaciones /home/spwn/Desktop/remoto/
 
 **Ejercicio 3:**<br />
 **Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre**<br />
++ Instalamos qemu: sudo apt-get install qemu-system
++ Creamos y montamos el almacenamiento: 
+ + sudo qemu-img create -f qcow2 cow.qcow2 5M
+ + sudo losetup -v -f cow.qcow2
+ + sudo mkfs.ext4 /dev/loop0
 
 **Ejercicio 4:**<br />
 **Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**<br />
++ Instalamos los componentes necesarios: sudo apt-get install btrfs-tools xfsprogs
++ Creamos las imagenes:
+ + sudo qemu-img create -f raw  a.img 200M
+ + sudo qemu-img create -f raw  b.img 200M
++ Establecemos el bucle y su correspondiente formato:
+ + sudo losetup -v -f a.img
+ + sudo losetup -v -f b.img
+ + sudo mkfs.xfs /dev/loop2
+ + sudo mkfs.btrfs /dev/loop3
++ Establecemos el punto de montaje:
+ + sudo mkdir mnt/m1
+ + sudo mkdir mnt/m2
+ + sudo mount -t xfs /dev/loop2 /mnt/m1
+ + sudo mount -t xfs /dev/loop3 /mnt/m2
++ Copiamos un archivo grande para valorar tiempos:
+ + sudo time -v cp archivo /mnt/m1/archivo
+ + sudo time -v cp archivo /mnt/m2/archivo 
++ Tiempo para el copiado en m1: 0.36
++ Tiempo para el copiado en m2: 0.37
 
 **Ejercicio 5:**<br />
 **Instalar ceph en tu sistema operativo.**<br />
+sudo mkdir -p /srv/ceph/{osd,mon,mds}
 
 **Ejercicio 6:**<br />
 **Crear un dispositivo ceph usando BTRFS o XFS**<br />
++ Creamos los directorios: mkdir -p /srv/ceph/{osd,mon,mds}
++ Creamos el archivo de configuracion:
+[global]<br />
+log file = /var/log/ceph/$name.log<br />
+pid file = /var/run/ceph/$name.pid<br />
+[mon]<br />
+mon data = /srv/ceph/mon/$name<br />
+[mon.mio]<br />
+host = spwn<br />
+mon addr = 127.0.0.1:6789<br />
+[mds]<br />
+[mds.mio]<br />
+host = spwn<br />
+[osd]<br />
+osd data = /srv/ceph/osd/$name<br />
+osd journal = /srv/ceph/osd/$name/journal<br />
+osd journal size = 1000 ; journal size, in megabytes<br />
+[osd.0]<br />
+host = spwn<br />
+devs = /dev/loop4<br />
++ Creamos una imagen con xfs:
+qemu-img create -f raw ceph.img 100M<br />
+sudo losetup -v -f ceph.img<br />
+sudo mkfs.xfs /dev/loop4<br />
++ Creamos los directorios:
+sudo mkdir /srv/ceph/osd/osd.0<br />
+sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf<br />
++ Arrancar el servicio: sudo /etc/init.d/ceph -a start
++ Creamos los directorios de montaje:
+ + sudo mkdir /mnt/ceph
+ + sudo mount -t ceph spwni:/ /mnt/ceph
 
 **Ejercicio 7:**<br />
 **Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.**<br />
++ sudo rados mkpool pool
++ sudo rados put -p pool obj felix
 
 **Ejercicio 8:**<br />
 **Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente**<br />
+`sudo apt-get install nodejs-legacy` <br />
+`sudo apt-get install npm`<br />
+`sudo npm install -g azure-cli`<br />
+Ahora enlazamos con nuestra cuenta:<br />
+`azure account download`<br />
+Nos dirigimos a la URL proporcionada e importamos el fichero descargado con:<br />
+`azure account import [archivo]`<br />
 
 **Ejercicio 9:**<br />
 **Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.**<br />
@@ -389,5 +461,171 @@ Y a continuacion instalar:<br />
 **Ejercicio 10:**<br />
 **Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.**<br />
 
+<hr />
 
+# Modulo VI - Virtualización completa: uso de máquinas virtuales
 
+**Ejercicio 1:**<br />
+**Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.** <br />
+ Ejecutando el comando `kvm-ok` nos devuelve KVM acceleration can be used, lo que nos indica que si podemos usarlo.
+ 
+**Ejercicio 2:**<br />
+###### 2.1 Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD. Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas se puede usar CoreOS (que sirve como soporte para Docker) GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y ttylinux (basado en línea de órdenes solo).<br />
++ ttylinux:
+ + qemu-img create -f qcow2 fichero-cow3.qcow2 10000M
+ + qemu-system-x86_64 -hda fichero-cow3.qcow2 -cdrom slitaz-4.0.iso
++ SliTaz:
+ + qemu-img create -f qcow2 fichero-cow3.qcow2 10000M
+ + qemu-system-x86_64 -hda fichero-cow3.qcow2 -cdrom slitaz-4.0.iso
+
+###### 2.2 Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.<br />
+En este caso selecciono añadir nueva maquina, introducimos el sistema operativo a crear, en nuestro caso ubuntu, configuramos las opciones de la máquina en cuanto a nivel hardware y especificamos el fichero de la imagen ISO del SO para poder proceder con la instalación. Así al arrancar la máquina el proceso será el mismo que si instalaramos un SO en cualquier máquina.
+ 
+**Ejercicio 3:**<br />
+**Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img**<br />
++ Primer caso:
+ + qemu-system-x86_64 -boot order=c -drive file=fichero-cow2.qcow2,if=virtio
++ Segundo caso: 
+ + qemu-system-x86_64 -hda fichero-cow2.qcow2
+Observando ambos casos y realizando 5 pruebas a cada uno, una vez calculada la media, el resultado obtenido es que el primer caso es más rápido respecto al segundo caso.
+
+**Ejercicio 4:**<br />
+**Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.**<br />
++ Creamos la imagen inicial: qemu-img create -f qcow2 lxde.img 15G
++ Ejecutamos el siguiente comando: qemu-system-x86_64 -hda lxde.img -cdrom debian-7.7.0-amd64-netinst.iso -m 512M
+
+**Ejercicio 5:**<br />
+**Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**<br />
+En la máquina virtual ubuntu creada anteriormente, introducimos el siguiente comando:
+`$ sudo apt-get install nginx` <br />
+Tras la instalación procedemos a ver la direccion de nuestro servidor en localhost y vemos el mensaje de bienvenida de nginx.
+
+**Ejercicio 6:**<br />
+**Usar juju para hacer el ejercicio anterior.**<br />
+
+**Ejercicio 7:**<br />
+**Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**<br />
+
+<hr />
+
+# Modulo VII - Gestión de infraestructuras virtuales
+
+**Ejercicio 1:**<br />
+**Instalar chef en la máquina virtual que vayamos a usar**<br />
+$ curl -L https://www.opscode.com/chef/install.sh | sudo bash
+
+**Ejercicio 2:**<br />
+**Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.**<br />
+`mkdir chef` <br />
+`mkdir chef/cookbooks` <br />
+`mkdir chef/cookbooks/emacs` <br />
+`mkdir chef/cookbooks/nginx` <br />
+`mkdir chef/cookbooks/carpeta` <br />
+En las tres carpetas de cookbooks se crea un archivo metadata.rb y una carpeta recipes con un fichero default.rb. Se editan los archivos metadata.rb y default.rb dependiendo de la tarea a realizar.<br />
+
++ En emacs:
+**metadata.rb**<br />
+maintainer       "Felix Parra"<br />
+maintainer_email "felixpm@correo.ugr.es"<br />
+description      "Install emacs"<br />
+version          "1.0"<br />
+name             "emacs"<br />
+
+recipe "emacs", "Install emacs"<br />
+
+**default.rb**<br />
+package 'emacs'<br />
+
++ En carpeta:
+**default.rb**<br />
+directory '/home/spwn/carpeta'<br />
+file "/home/spwn/carpeta/readme.txt" do<br />
+owner "spwn"<br />
+group "spwn"<br />
+mode 00777<br />
+action :create<br />
+content "Mkdir carpeta and readme.txt"<br />
+end<br />
+
+**metadata.rb**<br />
+maintainer       "Felix Parra"<br />
+maintainer_email "felixpm@correo.ugr.es"<br />
+description      "Mkdir carpeta and readme.txt"<br />
+version          "1.0"<br />
+name                 "carpeta"<br />
+
+recipe "fichero", "Mkdir carpeta and readme.txt"<br />
+
++ En nginx:
+**default.rb**<br />
+package 'nginx'<br />
+
+**metadata.rb**<br />
+maintainer       "Felix Parra"<br />
+maintainer_email "felixpm@correo.ugr.es"<br />
+description      "Install nginx"<br />
+version          "1.0"<br />
+name                 "nginx"<br />
+
+recipe "nginx", "Install nginx"<br />
+
+El archivo node.json del directorio chef debe contener:<br />
+{<br />
+  "nginx": {<br />
+    "version"   : "latest",<br />
+    "user"      : "www-data",<br />
+    "port"      : "80"<br />
+    },<br />
+    "emacs": {<br />
+      "version" : "latest"<br />
+      },<br />
+      "fichero": {<br />
+        "name"  : "carpeta"<br />
+        },<br />
+        "run_list": [<br />
+        "recipe[nginx]",<br />
+        "recipe[emacs]",<br />
+        "recipe[carpeta]"<br />
+        ]<br />
+      }<br />
+<br />
+Y el archivo solo.rb debe contener:<br />
+file_cache_path "/home/spwn/chef"<br />
+cookbook_path "/home/spwn/chef/cookbooks"<br />
+json_attribs "/home/spwn/chef/node.json"<br />
+
+**Ejercicio 3:**<br />
+**Escribir en YAML la siguiente estructura de datos en JSON**<br />
+---
+- uno: "dos"
+  tres:
+    - 4
+    - 5
+    - "Seis"
+    -
+      - siete: 8
+        nueve:
+          - 10
+          - 11
+
+**Ejercicio 4:**<br />
+**Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**<br />
+
+**Ejercicio 5:**<br />
+###### 5.1 Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
+###### 5.2 ¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.
+
+**Ejercicio 6:**<br />
+**Instalar una máquina virtual Debian usando Vagrant y conectar con ella**<br />
++ Instalamos vagrant: `sudo apt-get install vagrant`
++ Seleccionamos una imagen de las distintas [opciones](http://www.vagrantbox.es/)
++ Añadirmos la máquina: `sudo vagrant box add debian https://dl.dropboxusercontent.com/u/4775364/vagrant/debian-6.0.9-amd64-plain-vmware.box`
++ Inicializamos la maquna: `vagrant init debian`
++ Iniciamos la maquina: `vagrant up`
++ Nos conectamos: `vagrant ssh`
+
+**Ejercicio 7:**<br />
+**Crear un script para provisionar nginx o cualquier otro servidor web que pueda ser útil para alguna otra práctica** <br />
+
+**Ejercicio 8:**<br />
+**Configurar tu máquina virtual usando vagrant con el provisionador ansible**<br />

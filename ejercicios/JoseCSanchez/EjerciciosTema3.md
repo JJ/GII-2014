@@ -1,6 +1,10 @@
-# Ejercicio tema 3
+# Jose Carlos Sánchez Hurtado
+
+# Ejercicios tema 3
 
 ## Ejercicio 1
+
+#### Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback.
 
 Para crear un espacio de nombres hay que usar el siguiente comando:
 
@@ -16,6 +20,10 @@ sh mount -o loop disk.iso /mnt/disk
 
 
 ## Ejercicio 2
+
+#### 1. Mostrar los puentes configurados en el sistema operativo.
+
+#### 2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
 
 Para mostrar los puentes configurados en el sistema operativo se hace uso del comando:
 
@@ -48,6 +56,10 @@ ifconfig puente up
 
 ## Ejercicio 3
 
+#### 1. Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+#### 2. Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
 Primero instalamos debootstrap con la orden apt-get.
 
 ```sh
@@ -74,6 +86,8 @@ rinse --arch=i386 --distribution fedora-core-6 --directory /home/jose/fedora
 
 
 ## Ejercicio 4
+
+#### Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. 
 
 Primero instalo debian en la jaula:
 
@@ -102,6 +116,8 @@ apt-get install python
 ![](http://fotos.subefotos.com/f7fde5a7516736bff70d96eb110c2024o.png)
 
 ## Ejercicio 6
+
+#### Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar. 
 
 Como se indica en el enunciado del ejercicio, lo primero que hay que hacer es instalar jailkit.
 

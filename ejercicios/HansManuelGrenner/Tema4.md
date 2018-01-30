@@ -390,7 +390,7 @@ Con un simple doble clic podemos inciar la máquina, además el manager nos perm
 
 **Instalar docker.**
 
-Para [instalar el gestor de contenedores docker](http://docs.docker.com/installation/ubuntulinux/), podemos hacer uso del script creado por parte de sus desarrolladores para ubuntu. 
+Para [instalar el gestor de contenedores docker](http://docs.docker.com/installation/ubuntulinux/), podemos hacer uso del script creado por parte de sus desarroladores para ubuntu. 
 
 ```
 # Check that HTTPS transport is available to APT
@@ -417,28 +417,139 @@ apt-get install -y lxc-docker
 Mediante el siguiente comando podemos descargar y ejecutar directamente el script anterior.
 
 ```curl -sSL https://get.docker.com/ubuntu/ | sudo sh ```
+El script proporcionado en la página de docker da problemas al no encontrarse el paquete lxc-docker, por tanto he optado por un tutorial diferente, que nos ofrecen en el [siguiente enlace](http://www.liquidweb.com/kb/how-to-install-docker-on-ubuntu-14-04-lts/).
 
-Finalizada la instalación comprobamos que todo funciona de la forma esperada.
-
-```$ sudo docker run -i -t ubuntu /bin/bash ```
+Seguimos los pasos que se nos indican.
 
 
 ##Ejercicio 11
 
 **Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
 
+Finalizada la instalación comprobamos que todo funciona de la forma esperada ( con el ejemplo de una imagen ubuntu).
+
+```sudo docker run -i -t ubuntu /bin/bash ```
+
+> En mi caso al utilizar una máquina virtual de 32 bits , la imagen descargada de 64 bits no funcionará y dará un error de ejecución ( además docker utiliza binarios de 64 bits ).
+
+> ![Figura32](Imagenes/ej4_11_1.png)
+> Figura 32. Error ejecución imagen 64 bits.
+
+Me cambio apartir de aquí a una máquina virtual docker de 64 bits ( boot2docker ).
+
+A continuación descargaremos la imagen CentOS.
+
+```sudo docker pull centos ```
+
+```docker run -i -t centos /bin/bash ```
+
+
 ---
 
 **Buscar e instalar una imagen que incluya MongoDB.**
+
+Para buscar contenedores en docker usamos el comando ```docker search <keyword>```. En este comando indicamos la palabre clave que deseamos buscar. En este caso al necesitar una imgen que incluya mongoDB usaremos : 
+
+```docker search mongodb ```
+
+Guardamos los resultados en un fichero y los consultamos.
+
+> ![Figura33](Imagenes/ej4_12_1.png)
+> Figura 33. Imágenes que incuyen mongodb.
+
+Elegimos alguna de las imágenes disponibles para instalar. He optado por la imagen docker MongoDB basada en Debian.
+
+```sudo docker pull ncarlier/mongodb ```
 
 ##Ejercicio 12
 
 **Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.**
 
+Haciendo uso de algún contenedor creado, lo usaremos para crear el nuevo usuario e instalar nginx.
+
+En primer lugar nos conectamos al contenedor.
+
+```docker run -i -t centos /bin/bash ````.
+
+Ahora tenemos que crear el nuevo usuario.
+
+```useradd -s /bin/bash usernginx ```
+```passwd usernginx ```
+
+> Por defecto no viene el comando passwd en la imagen docker centos, por tanto tendremos que instalarlo mediante ```yum install passwd ```
+
+El siguiente paso es añadir el usuario a la list de sudo.
+
+Instalamos sudo.
+
+```yum install sudo ```
+
+Damos permisos al fichero de la lista.
+
+```chmod 666 /etc/sudoers ```
+
+Y editamos el fichero añadiendo el usuario.
+
+```vi /etc/sudoers ```
+
+> ![Figura34](Imagenes/ej4_12_2.png)
+> Figura 34. Añadiendo usuario a la lista de usuarios sudo.
+
+Y volvemos los permisos sobre el fichero a como estaban antes.
+
+```chmod 440 /etc/sudoers ```
+
+
+Cambiamos de usuario al recién creado y procedemos a instalar nginx.
+
+```su nginxuser ```
+
+Añadimos el repositorio de nginx para Centos 7 e instalamos.
+
+```sudo rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm```
+
+```sudo yum install nginx ```
+
+> ![Figura35](Imagenes/ej4_12_3.png)
+> Figura 35. Instalación nginx.
+
+
 ##Ejercicio 13
 
 **Crear a partir del contenedor anterior una imagen persistente con commit.**
 
+Lanzamos el contenedor y pulsamos ```CTRL+P ``` seguido de ```CTRL+Q ``` para salirnos de la shell sin matar el proceso del contenedor.
+
+Seguido ejecutamos el comando ```docker ps ``` para conocer la ID de nuestro contenedor y crear así la imagen persistente mediante un commit.
+
+```docker commit 94fa8c991ddd centosiv ```
+
+Y finalmente usando ```docker images ``` podemos consultar nuestras imágenes docker.
+
+> ![Figura36](Imagenes/ej4_13_1.png)
+> Figura 36. Creación de una imagen persistente mediante un commit.
+
+
 ##Ejercicio 14
 
 **Crear una imagen con las herramientas necesarias para DAI sobre un sistema operativo de tu elección.**
+
+En mi caso puedo reutilizar el script usado para la práctica tercera de la asignatura que automatiza todo el proceso.
+
+Lanzamos el contenedor que vayamos a utilizar ( Ubuntu en este caso ).
+
+```sudo docker run -i -t ubuntu /bin/bash ```
+
+Instalamos la herramienta wget para poder descargar el script.
+
+```sudo apt-get install wget ```
+
+Y procedemos a descargar e script.
+
+```wget https://raw.githubusercontent.com/julioxus/iv-aerospace/master/Hito3/install.sh ```
+
+Finalmente damos los permisos de ejecución al script y lo podremos ejecutar.
+
+```chmod +x install.sh ```
+
+```./install.sh ```

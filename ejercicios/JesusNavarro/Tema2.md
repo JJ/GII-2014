@@ -41,4 +41,6 @@ En mi caso he instalado dos PaaS que son OpenShift y Heroku, en este aparatado v
 
 **Ejerccio 7.** Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
 
+En mi caso he elegido un entorno para pruebas llamado tox <a href="https://pypi.python.org/pypi/tox" </a>
+
 

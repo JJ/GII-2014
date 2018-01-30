@@ -143,3 +143,18 @@
 * [] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
 * [] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
 * []Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+<h3> Clase del 12 de Enero </h3>
+* [X] Entender el concepto de provisionamiento de máquinas virtuales.
+* [] Usar Chef para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+* [] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+<h3> Clase del 13 de Enero </h3>
+* [X] Entender el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+* [X] Aprender a usar máquinas virtuales.
+* [] Elegir un sistema de provisionamiento.
+* [X] Entender los objetivos del último proyecto (y de la asignatura).
