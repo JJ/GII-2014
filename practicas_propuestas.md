@@ -51,7 +51,7 @@ análisis estadístico sobre ellos. El contacto es
 
 ## Proyectos en la nube con Codeko.com
 
-[Codeko.com](http://codeko.com) es una empresa granadina dedicada al desarrollo de aplicaciones web y Android. Propone los siguientes proyectos. L
+[Codeko.com](http://codeko.com) es una empresa granadina dedicada al desarrollo de aplicaciones web y Android. Propone los siguientes proyectos. 
 
 ###Gestor de claves en la nube
 
